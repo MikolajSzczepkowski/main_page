@@ -1,0 +1,197 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	background: url(./../images/background.png) repeat;
+}
+.margin-left{
+	margin-left: 15px;
+}
+#navigation{
+	background: #fff;
+}
+#navigation img{
+	margin: 10px 0;
+}
+.menu-size{
+	height: 50px;
+}
+#user{
+	display: inline-block;
+}
+.pointer{
+	cursor: pointer;
+}
+.login{
+	background: #363636;
+	height: 200px;
+	border-top: 5px solid #e43f3f;
+}
+.login-text{
+	width: 170px;
+	height: 30px;
+	background: #fff;
+	margin-top: 85px;
+	font-weight: bold;
+	line-height: 2;
+	margin-left: auto;
+	margin-right: auto;
+}
+.friends{
+	background: #fff;
+	border-left: 1px solid #d8d8d8;
+	padding-top: 20px;	
+	z-index: 100;
+}
+.friends-search-img{
+	width: 30px;
+	height: 30px;
+	margin-top: 10px; 
+	background: #d8d8d8;
+	display: inline-block;
+	list-style: none;
+}
+#userSearch{
+	font-style: italic;
+	font-weight: lighter;
+}
+.friends-header{
+	font-size: 12px;
+	font-style: italic;
+	margin: 10px 0 0 0;
+	border-bottom: 1px solid #d8d8d8; 
+}
+.friends-list{
+	margin: 5px 0 0 0;
+	overflow-y: scroll;
+	height: 400px;
+}
+.friends-list li{
+	font-size: 12px;
+	font-style: italic;
+	margin: 5px 0 0 0;
+	list-style-position: inside;
+	list-style-image: url(./../images/list-bullet-black.png);
+	cursor: pointer;
+}
+.friends-list li:hover{
+	background: #d8d8d8;
+	color: #fff;
+}
+.friends-list li img{
+	width: 30px;
+}
+li.friends-active{
+	list-style-image: url(./../images/list-bullet-blue.png);
+}
+.friends-active img{
+	border: 2px solid #1182f5;
+}
+.friends-list-buttons{
+	list-style: none;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+.friends-list-buttons li{
+	display: inline-block;
+	margin-left: 10px; 
+}
+.friends-list-buttons li img{
+	width: 15px;
+}
+.social{
+	height: 50px;
+	border-top: 3px solid #e43f3f;
+	border-bottom: 1px solid #d8d8d8;
+}
+.social-list-group{
+	height: 27px;
+}
+.social-list{
+	display: inline-block;
+	position: absolute;
+}
+.social-list:nth-child(1){
+	margin-left: 24%;
+}
+.social-list:nth-child(2){
+	margin-left: 37%;
+}
+.social-list:nth-child(3){
+	margin-left: 50%;
+}
+li.social-list img{
+ 	margin: 5px 0 0;
+}
+.main{
+	background: #fff;
+	margin-top: 15px;
+	border-top: 3px solid #e43f3f;
+	border-left: 1px solid #d8d8d8;
+	border-right: 1px solid #d8d8d8;
+}
+.main-inner-wrapper{
+	padding: 30px 20px;
+}
+@media screen and (min-width: 640px){
+	.social-list:nth-child(1){
+		margin-left: 40%;
+	}
+	.social-list:nth-child(2){
+		margin-left: 45%;
+	}
+	.social-list:nth-child(3){
+		margin-left: 50%;
+	}
+}
+@media screen and (min-width: 990px){
+	.border-bottom:hover{
+		box-shadow: 0 5px 0 #fff;
+	}
+	.menu-size{
+		width: 60px;
+		height: 50px;
+	}
+	.friends-row{
+		position: absolute;
+		width: 100%;
+	}
+	.friends{
+		margin-top: 5px;
+	}
+	.friends-list{
+		height: auto;
+	}
+	#userSearch{
+		width: 100%;
+	}
+	.social{
+		margin-top: 0;
+	}
+	.social-list{
+		position: relative;
+	}
+	.social-list:nth-child(1){
+		margin-left: 0;
+	}
+	.social-list:nth-child(2){
+		margin-left: 10px;
+	}
+	.social-list:nth-child(3){
+		margin-left: 10px;
+	}
+}
+@media screen and (min-width: 1024px){
+	.login-text{
+    	margin: 80px 0 0 15px;
+   	}
+	.social{
+		height: 50px;
+	}
+	li.social-list img{
+	 	margin: 8px 0 0 0;
+	}
+}
+@media screen and (min-width: 1280px){
+	.login-text{
+    	margin: 80px 0 0 45px;
+   	}
+}

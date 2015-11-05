@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+ 	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>main_page</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700italic,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/basic_style.css">
+	<link rel="stylesheet" href="style/main_page_style.css">
+</head>
+<body>
+<div class="container-fluid">
+	<nav id="navigation" class="row text-center">
+		<div class="col-md-1 col-md-offset-1">
+			<div id="menu" class="menu-size text-center pointer border-bottom">
+				<img src="images/icon-menu.png" alt="menu">
+			</div>
+		</div>
+		<div class="col-md-1 col-md-offset-1">
+			<div id="target" class="menu-size text-center pointer border-bottom">
+				<img src="images/target.png" alt="target">
+			</div>
+		</div>
+		<div class="col-md-2 col-md-offset-3">
+			<div id="user" class="menu-size text-center pointer border-bottom">
+				<img src="images/player.png" alt="user">
+			</div>
+			User 01
+		</div>
+		<div id="chat" class="col-md-2 col-md-offset-1">
+			<div class="menu-size text-center pointer border-bottom">
+				<img src="images/chat.png" alt="chat">
+			</div>
+		</div>
+	</nav>
+	<div class="row friends-row">
+		<div id="friends" class="col-xs-12 col-md-3 col-md-offset-9 col-lg-2 col-lg-offset-10 friends">
+			<div class="col-xs-12 friends-search-wrapper text-center">
+				<ul class="col-xs-12">
+					<li class="friends-search-img"></li>
+					<li class="friends-search-img"></li>
+					<li class="friends-search-img"></li>
+				</ul>
+				<label class="col-xs-12" for="userSearch">
+					<input type="text" id="userSearch" placeholder="Search users...">
+				</label>
+			</div>
+			<div class="col-xs-12 text-center friends-header">friends(34)</div>
+				<ul class="col-xs-12 friends-list text-left">
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li class="friends-active"><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<ul class="row friends-list-buttons">
+						<li><img src="images/message.png" alt="massage" class="friends-list-buttons"></li>
+						<li><img src="images/user.png" alt="user" class="friends-list-buttons"></li>
+					</ul>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+					<li><img src="images/team.png" alt="avatar"> Hooligan_Black</li>
+					<li><img src="images/team.png" alt="avatar"> Desperados_PL</li>
+				</ul>
+		</div>
+	</div>
+</div>
+	<div class="container-fluid login">
+		<div class="col-xs-12 col-md-2 col-md-offset-7">
+			<div class="login-text text-uppercase text-center pointer">login/register</div>
+		</div>
+	</div>
+	<div class="container-fluid social">
+		<ul class="col-xs -12 col-md-2 col-md-offset-6 social-list-group">
+			<li class="col-md-2 social-list"><a href="#"><img src="images/youtube.png" alt="youtube"></a></li>
+			<li class="col-md-2 social-list"><a href="#"><img src="images/facebook.png" alt="facebook"></a></li>
+			<li class="col-md-2 social-list"><a href="#"><img src="images/twitter.png" alt="twitter"></a></li>
+		</ul>
+	</div>
+<div class="container">
+	<div class="main">
+		<div class="main-inner-wrapper">
+			<div class="col-xs-12 banner">
+				<div class="banner-cover">
+					<h2>Battlefield 5 trailer released!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis perferendis laudantium quasi, ut fuga ad ea deleniti incidunt non error totam quas provident accusamus enim doloremque doloribus minima excepturi.</p>
+				</div>
+				<img src="images/moto.png" alt="moto">
+			</div>
+			<div class="col-xs-12 col-sm-7 banner">
+				<div class="banner-cover">
+					<h2>Battlefield 5 trailer released!</h2>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis perferendis laudantium quasi, ut fuga ad ea deleniti incidunt non error totam quas provident accusamus enim doloremque doloribus minima excepturi.</p>
+				</div>
+				<img src="images/rainbow-six.png" alt="rainbow-six">
+			</div>
+			<div id="calendar" class="col-xs-12 col-sm-5 calendar"></div>
+		</div>
+		<span class="row"></span>
+	</div>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script></body>
+</html>
