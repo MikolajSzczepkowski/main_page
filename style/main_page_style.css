@@ -18,7 +18,7 @@
 	border-bottom: 5px solid #e43f3f;
 	font-style: italic;
 }
-.banner-cover h2, p{
+.banner-cover h2, .banner-cover p{
 	margin: 0;
 	color: #fff;
 }
@@ -28,5 +28,32 @@
 }
 .calendar{
 	height: 352px;
-	background: blue;
+}
+.newest{
+	padding: 0;
+}
+.newest div{
+	padding-left: 0;
+}
+.newest div img{
+	width: 100%;
+	border: 2px solid #363636;
+}
+.newest div h5{
+	font-size: 14px;
+	font-weight: bold;
+
+}
+.newest div h5 div{
+	width: 40px;
+	height: 40px;
+	margin: 0;
+	background: #363636;
+}
+.newest div p{
+	background: #363636;
+	margin: 5px 0 0 0;
+	font-size: 14px;
+	font-style: italic;
+	color: #fff;
 }
