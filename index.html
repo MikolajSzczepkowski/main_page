@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
- 	<meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>main_page</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
@@ -86,12 +86,42 @@
 <div class="container">
 	<div class="main">
 		<div class="main-inner-wrapper">
-			<div class="col-xs-12 banner">
-				<div class="banner-cover">
-					<h2>Battlefield 5 trailer released!</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis perferendis laudantium quasi, ut fuga ad ea deleniti incidunt non error totam quas provident accusamus enim doloremque doloribus minima excepturi.</p>
+			<div id="myCarousel" class="col-xs-12 banner-carousel carousel slide" data-interval="false" data-ride="carousel">
+				<ol class="carousel-indicators">
+					<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+				</ol>
+				<div class="carousel-inner">
+					<div class="active item">
+						<div class="banner-inner">
+							<img src="images/moto.png" alt="moto">
+							<div class="carousel-caption">
+								<h3>Battlefield 5 trailer released!</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet reiciendis perferendis laudantium quasi, ut fuga ad ea deleniti incidunt non error totam quas provident accusamus enim doloremque doloribus minima excepturi</p>
+							</div>
+						</div>
+					</div>
+					 <div class="item">
+						<div class="banner-inner">
+							<img src="images/mortal.jpg" alt="mortal">
+							<div class="carousel-caption">
+								<h3>Mortal Kombat X!!!</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="item">
+						<div class="banner-inner">
+							<img src="images/witcher.jpg" alt="witcher">
+							<div class="carousel-caption">
+								<h3>The Witcher</h3>
+								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+							</div>
+						</div>
+					</div>
 				</div>
-				<img src="images/moto.png" alt="moto">
+				<hr class="transition-timer-carousel-progress-bar"/>
 			</div>
 			<div class="col-xs-12 col-sm-7 banner">
 				<div class="banner-cover">
@@ -128,7 +158,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-2">
 					<img src="images/newest-player.png" alt="newest player">
 					<p class="text-center">Michael Bay</p>
-				</div>			
+				</div>          
 			</div>
 			<div class="col-xs-12 newest">
 				<div class="col-xs-12">
@@ -157,7 +187,7 @@
 				<div class="col-xs-12 col-sm-4 col-md-2">
 					<img src="images/newest-player.png" alt="newest player">
 					<p class="text-center">Michael Bay</p>
-				</div>			
+				</div>          
 			</div>
 		</div>
 		<span class="row"></span>
