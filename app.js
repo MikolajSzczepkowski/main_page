@@ -68,7 +68,7 @@ $(function (){
 			    })
 	$(".newest").on("mouseenter", function(){
 		$(this).append("<div class='newest-hover'></div>");
-		$(".newest-hover").append("<p class='text-center text-uppercase first-hover'>visit</p>");
+		$(".newest-hover").append("<p class='text-center text-uppercase'>visit</p>");
 		$(".newest-hover").append("<p class='text-center text-uppercase'>profile</p>");	
 	});
 	$(".newest").on("mouseleave", function(){
