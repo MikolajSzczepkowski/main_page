@@ -45,5 +45,5 @@ $(function (){
     $( "#progressbar2" ).progressbar({
       value: 75
     });
-    $( "#calendar" ).datepicker();
+    $( "#calendar" ).datepicker({ firstDay: 1});
 });
