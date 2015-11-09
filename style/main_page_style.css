@@ -5,6 +5,9 @@
 .banner-carousel{
 	margin: 0 0 20px 0;
 }
+.carousel-indicators {
+    bottom: -10px;
+}
 .banner{
 	margin: 0 0 20px 0;
 	padding-right: 0;
@@ -26,6 +29,14 @@
 	border-top: 2px solid #e43f3f;
 	border-bottom: 5px solid #e43f3f;
 	font-style: italic;
+}
+.carousel-caption.banner-cover{
+	width: 100%;
+	border-bottom: none;
+	left: 0;
+}
+.carousel-caption{
+	text-align: left;
 }
 .banner-cover h2, .banner-cover p{
 	margin: 0;
@@ -110,32 +121,49 @@
 .ui-datepicker-current-day .ui-state-default{
 	background: #363636;
 }
-.newest div{
+.newest-wrapper div{
 	padding-left: 0;
 }
-.newest div img{
+.newest-wrapper .active img{
+	border: 2px solid #1182f5;
+}
+.newest-wrapper .active p{
+	background: #1182f5;
+}
+.newest-wrapper div img{
 	width: 100%;
 	border: 2px solid #363636;
 }
-.newest div h5{
+.newest-wrapper div h5{
 	font-size: 14px;
 	font-weight: bold;
 	padding: 50px 0;
 
 }
-.newest div h5 div{
+.newest-wrapper div h5 div{
 	width: 40px;
 	height: 40px;
 	margin: 0 20px -15px 0;
 	display: inline-block;
 	background: #363636;
 }
-.newest div p{
+.newest p{
 	background: #363636;
 	margin: 5px 0 0 0;
 	font-size: 14px;
 	font-style: italic;
 	color: #fff;
+}
+.newest-hover{
+	width: 163px;
+    height: 163px;
+    position: absolute;
+    z-index: 10;
+    background: rgba(250, 250, 250, 0.9);
+    bottom: 25px;
+}
+.first-hover{
+	margin-top: 20px;
 }
 .item{
     background: #333;    

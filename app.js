@@ -33,8 +33,7 @@ $(function (){
 		$(".game-image-hover").append("<p class='text-center text-uppercase game-hover-fee'></p>");
 		$(".game-hover-players").html("players<br>24/64");
 		$(".game-hover-info").html("Registration ends<br> 28.10.2015");
-		$(".game-hover-fee").html("678$");
-		
+		$(".game-hover-fee").html("678$");	
 	});
 	$(".game-image").on("mouseleave", function(){
 		$(".game-image-hover").remove();
@@ -67,4 +66,12 @@ $(function (){
 			    function(){
 			        barInterval = setInterval(progressBarCarousel, 30);
 			    })
+	$(".newest").on("mouseenter", function(){
+		$(this).append("<div class='newest-hover'></div>");
+		$(".newest-hover").append("<p class='text-center text-uppercase first-hover'>visit</p>");
+		$(".newest-hover").append("<p class='text-center text-uppercase'>profile</p>");	
+	});
+	$(".newest").on("mouseleave", function(){
+		$(".newest-hover").remove();
+	});
 });
