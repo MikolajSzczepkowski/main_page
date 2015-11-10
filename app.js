@@ -44,7 +44,10 @@ $(function (){
     $( "#progressbar2" ).progressbar({
       value: 75
     });
-    $( "#calendar" ).datepicker({ firstDay: 1});
+    $( "#calendar" ).datepicker({showOtherMonths: true,
+            		selectOtherMonths: true,
+            		firstDay: 1
+	});
     
     var percent = 0, bar = $('.transition-timer-carousel-progress-bar'), crsl = $('#myCarousel');
 			function progressBarCarousel() {
@@ -72,6 +75,15 @@ $(function (){
 		$(".newest-hover").append("<p class='text-center text-uppercase'>profile</p>");	
 	});
 	$(".newest").on("mouseleave", function(){
+		$(".newest-hover").remove();
+	});
+	$(".newest-tournament").on("mouseenter", function(){
+		$(this).append("<div class='newest-hover text-center'></div>");
+		$(".newest-hover").append("<img src='images/cup.png' alt='cup'/>");
+		$(".newest-hover").append("<p class='text-uppercase'>enter</p>");
+		$(".newest-hover").append("<p class='text-uppercase'>tournament</p>");	
+	});
+	$(".newest-tournament").on("mouseleave", function(){
 		$(".newest-hover").remove();
 	});
 });

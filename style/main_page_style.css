@@ -11,6 +11,7 @@
 .banner{
 	margin: 0 0 20px 0;
 	padding-right: 0;
+	padding-left: 0;
 }
 .banner img{
 	width: 100%;
@@ -45,6 +46,10 @@
 .banner-cover h2{
 	padding: 0 0 15px 0;
 	color: #e43f3f;
+	font-size: 18px;
+}
+.banner-cover p{
+	font-size: 12px;
 }
 .calendar{
 	height: 389px; 
@@ -59,7 +64,7 @@
 	border: none; 
 }
 .ui-datepicker-header{
-	height: 25%;
+	height: 20%;
 	background: #363636;
 	padding: 0;
 	border-radius: 0;
@@ -70,7 +75,7 @@
 .ui-datepicker-title{
 	width: 69%;
 	height: 100%;
-	padding-top: 6%;
+	padding-top: 3%;
 	background: #fff;
 	text-transform: uppercase;
 	box-shadow: 8px 0 0 0 #fff;
@@ -109,17 +114,17 @@
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
 	height: 40px;
 	padding-top: 8px;
-	background: #ff3838;
+	background: #363636;
 	color: #fff;
 	text-align: center;
 	font-family: arial;
 	font-weight: bold;
 }
 .ui-datepicker-today .ui-state-default{
-	background: #363636;
+	background: #ff3838;
 }
 .ui-datepicker-current-day .ui-state-default{
-	background: #363636;
+	background: #ff3838;
 }
 .newest-wrapper div{
 	padding-left: 0;
@@ -131,7 +136,7 @@
 	background: #1182f5;
 }
 .newest-wrapper div img{
-	width: 100%;
+	width: 160px;
 	border: 2px solid #363636;
 }
 .newest-wrapper div h5{
@@ -147,20 +152,22 @@
 	display: inline-block;
 	background: #363636;
 }
-.newest p{
+.newest p, .newest-tournament p{
+	width: 160px;
 	background: #363636;
-	margin: 5px 0 0 0;
+	margin: 5px 0 10px 0;
 	font-size: 14px;
 	font-style: italic;
 	color: #fff;
 }
 .newest-hover{
-	width: 163px;
-    height: 163px;
+	width: 156px;
+    height: 156px;
+    margin: 0 0 2px 2px;
     position: absolute;
     z-index: 10;
     background: rgba(250, 250, 250, 0.9);
-    bottom: 25px;
+    bottom: 35px;
 }
 .newest-hover p{
 	width: 50%;
@@ -169,6 +176,20 @@
 .newest-hover p:nth-of-type(1){
 	width: 40%;
 	margin-top: 60px;
+}
+.newest-tournament div{
+	bottom: 50px;
+}
+.newest-tournament p:nth-of-type(1){
+	margin-top: 20px;
+}
+.newest-tournament p:nth-of-type(2){
+	width: 70%;
+}
+div.newest-hover img{
+	width: 24px;
+	border: none;
+	margin-top: 20px; 
 }
 .item{
     background: #333;    
@@ -202,6 +223,9 @@
 	.ui-datepicker-title{
 		box-shadow: 6px 0 0 0 #fff;
 	}
+	.banner{
+		padding-left: 15px;
+	}
 }
 @media screen and (min-width: 990px){
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
@@ -215,13 +239,19 @@
 }
 @media screen and (min-width: 1200px){
 	.calendar{
-		height: 363px; 
+		height: 270px; 
 	}
 	.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
 		height: 40px;
-		padding-top: 8px;
+		padding-top: 10px;
 	}
 	.ui-datepicker-title{
 		box-shadow: 9px 0 0 0 #fff;
+	}
+	.banner-cover h2{
+		font-size: 30px;
+	}
+	.banner-cover p{
+		font-size: 14px;
 	}
 }
