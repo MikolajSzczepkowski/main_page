@@ -1,21 +1,21 @@
 $(function (){
-	var pageHeight = $(document).height(),
+	var pageHeight = $(window).height()-195;
 		pageWidth = $(document).width();
 
 	if(pageWidth>=990){
-		$(".friends").css("height", pageHeight);
+		$(".friends-list").css("height", pageHeight);
 	}
 	else{
-		$(".friends").css("height", "auto");
+		$(".friends-list").css("height", "400px");
 	}
 	$(window).resize(function(){
-		pageHeight = $(document).height(),
+		pageHeight = $(window).height()-195,
     	pageWidth = $(document).width();
     	if(pageWidth>=990){
-			$(".friends").css("height", pageHeight);
+			$(".friends-list").css("height", pageHeight);
 		}
 		else{
-			$(".friends").css("height", "auto");
+			$(".friends-list").css("height", "400px");
 		}
 	});
 
@@ -23,7 +23,7 @@ $(function (){
 		$("#friends").toggle( "slide", { 
 			direction: "right",
 			easing: "swing"
-		},500);
+		},200);
 	});
 
 	$(".game-image").on("mouseenter", function(){

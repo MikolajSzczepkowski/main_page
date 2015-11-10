@@ -7,6 +7,7 @@ body{
 }
 #navigation{
 	background: #fff;
+	border-bottom: 5px solid #e43f3f;
 }
 #navigation img{
 	margin: 10px 0;
@@ -21,17 +22,14 @@ body{
 	cursor: pointer;
 }
 .login{
-	background: #363636;
 	height: 200px;
-	border-top: 5px solid #e43f3f;
+	background: #363636;
 }
 .login-text{
 	width: 170px;
 	height: 40px;
 	background: #fff;
-	margin-top: 80px;
-	margin-left: auto;
-	margin-right: auto;
+	margin: 85px auto 0 auto;
 	padding-top: 5px;
 	font-weight: bold;
 	line-height: 2;
@@ -39,8 +37,7 @@ body{
 .friends{
 	background: #fff;
 	border-left: 1px solid #d8d8d8;
-	padding-top: 20px;	
-	z-index: 100;
+	padding: 73px 0 20px 0;
 }
 .friends-search-img{
 	width: 30px;
@@ -147,6 +144,18 @@ li.social-list img{
 	}
 }
 @media screen and (min-width: 990px){
+	.nav-wrapper{
+		position: fixed;
+		width: 100%;
+		z-index: 1111;
+	}
+	.login{
+		height: 255px;
+		background: #363636;
+	}
+	.login-text{
+    	margin: 135px 0 0 15px;
+   	}
 	.border-bottom:hover{
 		box-shadow: 0 5px 0 #fff;
 	}
@@ -154,15 +163,16 @@ li.social-list img{
 		width: 60px;
 		height: 50px;
 	}
-	.friends-row{
-		position: absolute;
-		width: 100%;
-	}
 	.friends{
-		margin-top: 5px;
+		right: 0;
+		position: fixed;
+		z-index: 100;
+	}
+	.friends-row{
+		float: right;
 	}
 	.friends-list{
-		height: auto;
+		height: inherit;
 	}
 	#userSearch{
 		width: 100%;
@@ -184,9 +194,6 @@ li.social-list img{
 	}
 }
 @media screen and (min-width: 1024px){
-	.login-text{
-    	margin: 80px 0 0 15px;
-   	}
 	.social{
 		height: 50px;
 	}
@@ -196,6 +203,6 @@ li.social-list img{
 }
 @media screen and (min-width: 1280px){
 	.login-text{
-    	margin: 80px 0 0 45px;
+    	margin: 135px 0 0 45px;
    	}
 }
