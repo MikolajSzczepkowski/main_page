@@ -177,10 +177,7 @@
 	width: 40%;
 	margin-top: 60px;
 }
-.newest-tournament div{
-	bottom: 50px;
-}
-.newest-tournament p:nth-of-type(1){
+.newest-tournament .newest-hover p:nth-of-type(1){
 	margin-top: 20px;
 }
 .newest-tournament p:nth-of-type(2){
