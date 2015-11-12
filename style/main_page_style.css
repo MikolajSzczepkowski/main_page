@@ -120,11 +120,11 @@
 	font-family: arial;
 	font-weight: bold;
 }
-.ui-datepicker-today .ui-state-default{
-	background: #ff3838;
-}
 .ui-datepicker-current-day .ui-state-default{
 	background: #ff3838;
+}
+.ui-datepicker-today .ui-state-default{
+	background: #1182f5;
 }
 .newest-wrapper div{
 	padding-left: 0;
