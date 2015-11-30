@@ -46,16 +46,23 @@ $(function (){
 		$(".newest-hover").remove();
 	});
 
-	$(document).on('click', '.panel-heading span.icon_minim', function (e) {
-	    var $this = $(this);
-	    if (!$this.hasClass('panel-collapsed')) {
-	        $this.parents('.panel').find('.chat-body').slideUp();
-	        $this.addClass('panel-collapsed');
-	        $this.removeClass('glyphicon-minus').addClass('glyphicon-plus');
-	    } else {
-	        $this.parents('.panel').find('.chat-body').slideDown();
-	        $this.removeClass('panel-collapsed');
-	        $this.removeClass('glyphicon-plus').addClass('glyphicon-minus');
-	    }
+	$(document).on("click", ".panel-heading span.icon_minim", function () {
+		var $this = $(this);
+		if (!$this.hasClass("panel-collapsed")) {
+			$this.parents(".panel").find(".chat-body").slideUp();
+			$this.parents(".chat-window").animate({top: "285px"});
+			$this.addClass("panel-collapsed");
+			$this.removeClass("glyphicon-minus").addClass("glyphicon-plus");
+		} else {
+			$this.parents(".panel").find(".chat-body").slideDown();
+			$this.parents(".chat-window").animate({top: "0"});
+			$this.removeClass("panel-collapsed");
+			$this.removeClass("glyphicon-plus").addClass("glyphicon-minus");
+		}
+	});
+	$(document).on("click", ".icon_close", function () {
+		var $this = $(this);
+		var $thisId = $this.parents(".chat-window").attr("id");
+		$("#"+ $thisId).remove();
 	});
 });
