@@ -98,6 +98,114 @@ li.friends-active{
 .friends-list-buttons li img:hover{
 	transform: translateY(-5px);
 }
+.chat-row{
+	float: right;
+	position: fixed;
+	z-index: 100;
+	bottom: 0;
+}
+.chat-window{
+	padding: 0 15px;
+
+}
+.chat-window-inner{
+	bottom: 0;
+	padding: 0;
+	background: #fff;
+    border: 1px solid #d8d8d8;
+}
+.chat-top-bar{
+	height: 20px;
+	padding: 0;
+	border-bottom: 1px solid #d8d8d8;
+	border-radius: 0;
+}
+.chat-top-bar h3{
+	font-size: 12px;
+	font-style: italic;
+    line-height: 1.5;
+}
+.chat-top-bar h3 img{
+	margin-top: -2px;
+}
+.chat-top-bar a{
+	color: #363636;
+}
+.chat-top-bar a:hover{
+	color: #d8d8d8;
+}
+.no-border{
+	border: none; 
+	box-shadow: none;
+}
+.chat-body{
+	padding: 0;
+}
+.chat-body ul{
+	height: 200px;
+	overflow-y: scroll;
+	list-style: none;
+}
+.chat-body ul li .chat-message-wrapper{
+	margin-bottom: 5px;
+}
+.chat-body ul li div{
+	padding: 0;
+}
+.chat-body h6{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+	font-style: italic;
+	color: #d8d8d8;
+}
+.chat-body p{
+	padding: 5px 0;
+	margin: 0;
+	font-size: 12px;
+	font-style: italic;
+	color: #fff;
+}
+.online-player{
+	color: #1182f5;
+}
+.chat-body img{
+	border: 2px solid #363636;
+}
+.chat-body .online-player img{
+	border: 2px solid #1182f5;
+}
+p.chat-panel-message{
+	margin: 0;
+	padding: 12px 10px;
+	background: #1182f5;
+	border-radius: 15px;
+	border-bottom: none;
+}
+.chat-body ul li div.chat-answer{
+	float: right;
+	padding-left: 5px;
+}
+.chat-footer{
+	background: #fff;
+	border: 0;
+}
+.new-message{
+	padding: 5px;
+}
+.new-message input{
+	padding-left: 10px;
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	font-style: italic;
+}
+.new-message input, .new-message textarea{
+	height: 50px;
+	background: #f4f4f4;
+	border: none;
+	border-radius: 15px;
+	resize: none;
+}
 .social{
 	height: 50px;
 	border-top: 3px solid #e43f3f;
@@ -132,6 +240,7 @@ li.social-list img{
 .main-inner-wrapper{
 	padding: 30px 20px;
 }
+
 @media screen and (min-width: 640px){
 	.social-list:nth-child(1){
 		margin-left: 40%;
