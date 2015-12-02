@@ -106,17 +106,22 @@ li.friends-active{
 	transform: translateY(-5px);
 }
 .chat-row{
-	height: 325px;
 	float: right;
 	position: fixed;
 	z-index: 100;
 	bottom: 0;
 }
+.chat-row-height{
+	height: 325px;
+}
 .chat-window{
+	width: 300px;
 	padding: 0 15px;
-	float: right;
+	margin: 0 5px;
+	display: inline-block;
 }
 .chat-window-inner{
+	width: 300px;
 	padding: 0;
 	background: #fff;
     border: 1px solid #d8d8d8;

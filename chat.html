@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>chat window</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700italic,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="style/basic_style.css">
+	<link rel="stylesheet" href="style/main_page_style.css">
+</head>
+<body>
+<div id="chatContainer" class="chat-row">
+		<div class="chat-window" id="chatWindow1">
+			<div class="col-xs-12 chat-window-inner">
+				<div class="panel no-border">
+					<div class="panel-heading chat-top-bar">
+						<div class="col-md-8 col-xs-8">
+							<h3 class="panel-title"><img src="images/list-bullet-blue.png"> Hooligan_Black</h3>
+						</div>
+						<div class="col-md-4 col-xs-4" style="text-align: right;">
+							<span class="glyphicon glyphicon-minus icon-minim"></span>
+							<span class="glyphicon glyphicon-remove icon-close"></span>
+						</div>
+					</div>
+					<div class="col-xs-12 chat-body">
+						<h6 class="text-center">20.11.2015</h6>
+						<ul class="col-xs-12">
+							<li>
+								<div class="col-xs-12 chat-message-wrapper">
+									<div class="col-xs-12 col-md-2 online-player">
+										<img src="images/team.png" alt="player">	
+									</div>
+									<p class="col-xs-10 chat-panel-message">Hello man, wazzup?</p>
+								</div>
+							</li>
+							<li>
+								<div class="col-xs-12 chat-message-wrapper">
+									<div class="col-xs-12 col-md-2 chat-answer">
+										<img src="images/game.png" alt="player">	
+									</div>
+									<p class="col-xs-10 chat-panel-message">Hello man, wazzup?</p>
+								</div>
+							</li>
+							<li>
+								<div class="col-xs-12 chat-message-wrapper">
+									<div class="col-xs-12 col-md-2 online-player">
+										<img src="images/team.png" alt="player">	
+									</div>
+									<p class="col-xs-10 chat-panel-message">Hello man, wazzup?</p>
+								</div>
+							</li>
+						</ul>
+						<form name="chat-message" id="chatPanelMessage" class="col-xs-12 new-message">
+							<textarea name="user-message" form="chatPanelMessage" class="col-xs-12 col-lg-9"></textarea>
+							<input type="submit" name="submit-message" value="send" class="col-xs-3 col-sm-4 col-sm-offset-0 col-lg-2 col-lg-offset-1">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="jquery-ui-1.11.4/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="./js/main_app.js"></script>
+<script src="./js/main_page_app.js"></script>
+</body>
+</html>
