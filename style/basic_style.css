@@ -5,11 +5,11 @@ body{
 .margin-left{
 	margin-left: 15px;
 }
-#navigation{
+.nav-wrapper{
 	background: #fff;
 	border-bottom: 5px solid #e43f3f;
 }
-#navigation img{
+.nav-wrapper div img{
 	margin: 10px 0;
 }
 .menu-size{
@@ -20,6 +20,7 @@ body{
 }
 .menu-box{
 	margin-top: 5px;
+
 	border: 0;
 	border-radius: 0;
 	padding: 0;
@@ -35,6 +36,26 @@ body{
 }
 .menu-box li a{
 	padding: 0 90px 0 0;
+}
+.menu-box li a img{
+	margin: 0;
+}
+#target .menu-box li:first-child h6{
+	height: 63px;
+	width: 250px;
+	padding: 20px 90px 0 30px;
+	margin: 0;
+	font-size: 14px;
+}
+#target .menu-box li a {
+	width: 360px;
+}
+#target .menu-box li a:hover{
+	background: #e43f3f; 
+}
+#target .menu-box li a img{
+	width: 50%;
+	padding-right: 20px;
 }
 .pointer{
 	cursor: pointer;
@@ -300,6 +321,11 @@ li.social-list img{
 	width: 100%;
 	margin: -5px 0 0 0;
 }
+@media screen and (min-width: 480px){
+	.menu-box{
+		left: 45%;
+	}
+}
 @media screen and (min-width: 640px){
 	.social-list:nth-child(1){
 		margin-left: 40%;
@@ -321,6 +347,15 @@ li.social-list img{
 		position: fixed;
 		width: 100%;
 		z-index: 1111;
+	}
+	.menu-box{
+		left: 0;
+	}
+	#target .menu-box li a img{
+		width: 100%;
+	}
+	.menu-xbox{
+		margin-left: 370px;
 	}
 	.login{
 		height: 255px;
