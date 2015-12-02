@@ -351,9 +351,6 @@ li.social-list img{
 	.menu-box{
 		left: 0;
 	}
-	#target .menu-box li a img{
-		width: 70%;
-	}
 	.menu-xbox{
 		margin-left: 370px;
 	}
@@ -413,4 +410,7 @@ li.social-list img{
 	.login-text{
     	margin: 135px 0 0 45px;
    	}
+   	#target .menu-box li a img{
+		width: 70%;
+	}
 }
