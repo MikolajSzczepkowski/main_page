@@ -18,6 +18,24 @@ body{
 #user{
 	display: inline-block;
 }
+.menu-box{
+	margin-top: 5px;
+	border: 0;
+	border-radius: 0;
+	padding: 0;
+	background: #d8d8d8;
+	border-bottom: 3px solid #e43f3f;
+}
+.menu-box li{
+	margin-bottom: 3px;
+	background: #fff;
+}
+.menu-box li:last-child{
+	margin-bottom: 0;
+}
+.menu-box li a{
+	padding: 0 90px 0 0;
+}
 .pointer{
 	cursor: pointer;
 }

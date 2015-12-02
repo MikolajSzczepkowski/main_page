@@ -14,8 +14,30 @@
 <div class="container-fluid">
 	<nav id="navigation" class="row text-center nav-wrapper">
 		<div class="col-md-1 col-md-offset-1">
-			<div id="menu" class="menu-size text-center pointer border-bottom">
-				<img src="images/icon-menu.png" alt="menu">
+			<div id="menu" class="dropdown menu-size text-center pointer border-bottom">
+				<a href="#" data-toggle="dropdown" data-target="#">
+					<img src="images/icon-menu.png" alt="menu">
+				</a>
+				<ul class="dropdown-menu menu-box">
+					<li>
+						<a href="#"><img src="images/home.gif" alt="home">Home</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/tv.gif" alt="tv">TV</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/rank.gif" alt="ranking">Ranking</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/users.gif" alt="users">Users</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/shop.gif" alt="shop">Shop</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/settings.gif" alt="settings">Settings</a>
+					</li>
+				</ul>
 			</div>
 		</div>
 		<div class="col-md-1 col-md-offset-1">
@@ -219,5 +241,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="./js/main_app.js"></script>
 <script src="./js/main_page_app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
