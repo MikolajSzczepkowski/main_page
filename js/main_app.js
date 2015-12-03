@@ -2,7 +2,7 @@ $(function (){
 	var pageHeight = $(window).height()-195;
 		pageWidth = $(document).width(),
 		menuBoxHeight = $("#firstMenuBox").height()+20;
-console.log(menuBoxHeight);
+
 	if(pageWidth>=990){
 		$(".friends-list").css("height", pageHeight);
 		$("#secondMenuBox").css("margin-top", "5px");
@@ -13,9 +13,9 @@ console.log(menuBoxHeight);
 	}
 	$(window).resize(function(){
 		pageHeight = $(window).height()-195,
-    	pageWidth = $(document).width();
-    	menuBoxHeight = $("#firstMenuBox").height()+20;
-    	if(pageWidth>=990){
+		pageWidth = $(document).width();
+		menuBoxHeight = $("#firstMenuBox").height()+20;
+		if(pageWidth>=990){
 			$(".friends-list").css("height", pageHeight);
 			$("#secondMenuBox").css("margin-top", "5px");
 		}
@@ -30,5 +30,6 @@ console.log(menuBoxHeight);
 			direction: "right",
 			easing: "swing"
 		},200);
+		$("#chatContainer").toggleClass("chat-right-buffer chat-right-buffer-clear")
 	});
 });

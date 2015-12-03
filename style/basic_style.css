@@ -153,6 +153,14 @@ li.friends-active{
 .chat-row-height{
 	height: 325px;
 }
+.chat-right-buffer{
+	right: 245px;
+	transition: right 0.2s;
+}
+.chat-right-buffer-clear{
+	right: 20px;
+	transition: right 0.2s;
+}
 .chat-window{
 	width: 300px;
 	padding: 0 15px;
@@ -166,9 +174,7 @@ li.friends-active{
     border: 1px solid #d8d8d8;
 }
 .chat-top-bar{
-	height: 20px;
 	padding: 0;
-	border-bottom: 1px solid #d8d8d8;
 	border-radius: 0;
 }
 .chat-top-bar h3{
@@ -192,6 +198,7 @@ li.friends-active{
 }
 .chat-body{
 	padding: 0;
+	border-top: 1px solid #d8d8d8;
 }
 .chat-body ul{
 	height: 200px;
@@ -242,21 +249,21 @@ p.chat-panel-message{
 	border: 0;
 }
 .new-message{
+	height: 30px;
 	padding: 5px;
+	border-top: 1px solid #d8d8d8;
 }
-.new-message input{
+.new-message input, .new-message label{
 	padding-left: 10px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 14px;
-	font-weight: bold;
-	font-style: italic;
-}
-.new-message input, .new-message textarea{
-	height: 50px;
-	background: #f4f4f4;
+	background: #fff;
 	border: none;
-	border-radius: 15px;
-	resize: none;
+	font-family: 'Open Sans', sans-serif;
+	display: inline-block;
+}
+.new-message label span{
+	cursor: pointer;
+	color: #d8d8d8;
+	position: absolute;
 }
 .social{
 	height: 50px;
@@ -293,9 +300,9 @@ li.social-list img{
 	padding: 30px 20px;
 }
 .footer{
-	padding-top: 20px;
 	background: #363636;
 	border-top: 5px solid #e43f3f;
+	border-bottom: 10px solid #363636;
 }
 .footer a{
 	text-decoration: none;
@@ -307,6 +314,14 @@ li.social-list img{
 .footer h2{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
+	padding-top: 5px;
+}
+.footer nav{
+	padding-top: 5px;
+}
+.footer ul{
+	padding-top: 5px;
+	height: 50px;
 }
 .footer ul li{
 	padding: 20px 10px; 

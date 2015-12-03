@@ -53,8 +53,11 @@
 							</li>
 						</ul>
 						<form name="chat-message" id="chatPanelMessage" class="col-xs-12 new-message">
-							<textarea name="user-message" form="chatPanelMessage" class="col-xs-12 col-lg-9"></textarea>
-							<input type="submit" name="submit-message" value="send" class="col-xs-3 col-sm-4 col-sm-offset-0 col-lg-2 col-lg-offset-1">
+							<input type="text" name="user-message" form="chatPanelMessage" class="col-xs-10 col-lg-9"></input>
+							<label for="send" class="col-xs-2 col-sm-4 col-sm-offset-0 col-lg-2 col-lg-offset-1">
+								<span class="glyphicon glyphicon-share"></span>
+								<input id="send" type="submit" name="submit-message" value="">
+							</label>
 						</form>
 					</div>
 				</div>
