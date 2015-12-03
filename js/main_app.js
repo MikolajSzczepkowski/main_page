@@ -6,6 +6,7 @@ $(function (){
 	if(pageWidth>=990){
 		$(".friends-list").css("height", pageHeight);
 		$("#secondMenuBox").css("margin-top", "5px");
+		$("#menuBackground").css("height", menuBoxHeight-16);
 	}
 	else{
 		$(".friends-list").css("height", "400px");

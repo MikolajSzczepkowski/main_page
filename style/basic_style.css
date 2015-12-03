@@ -20,8 +20,7 @@ body{
 }
 .menu-box{
 	margin-top: 5px;
-
-	border: 0;
+	box-shadow: none;
 	border-radius: 0;
 	padding: 0;
 	background: #d8d8d8;
@@ -49,6 +48,9 @@ body{
 }
 #target .menu-box li a {
 	width: 360px;
+}
+#target .menu-box li a:hover {
+	color: #fff;
 }
 #target .menu-box li a:hover{
 	background: #e43f3f; 
@@ -365,6 +367,15 @@ li.social-list img{
 	}
 	.menu-box{
 		left: 0;
+	}
+	.menu-background{
+		width: 1200px;
+		margin-top: 5px;
+		margin-left: -240px;
+		border: none;
+		border-radius: 0;
+		border-bottom: 3px solid #E43F3F;
+	    background: #d8d8d8;
 	}
 	.menu-xbox{
 		margin-left: 370px;
