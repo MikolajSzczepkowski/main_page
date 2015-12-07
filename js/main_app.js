@@ -2,7 +2,7 @@ $(function (){
 	var pageHeight = $(window).height()-195;
 		pageWidth = $(document).width(),
 		menuBoxHeight = $("#firstMenuBox").height()+20;
-
+		
 	if(pageWidth>=990){
 		$(".friends-list").css("height", pageHeight);
 		$("#secondMenuBox").css("margin-top", "5px");
