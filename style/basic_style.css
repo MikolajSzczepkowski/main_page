@@ -227,6 +227,11 @@ li.friends-active{
 	font-style: italic;
 	color: #fff;
 }
+.left-chat-window{
+	top: 0;
+	left: 0;
+	position: absolute;
+}
 .online-player{
 	color: #1182f5;
 }
