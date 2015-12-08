@@ -78,7 +78,7 @@ body{
 .friends{
 	background: #fff;
 	border-left: 1px solid #d8d8d8;
-	padding: 73px 0 20px 0;
+	padding: 73px 0 0 0;
 }
 .friends-search-img{
 	width: 30px;
@@ -103,9 +103,10 @@ body{
 	border-bottom: 1px solid #d8d8d8; 
 }
 .friends-list{
+	height: 400px;
 	margin: 5px 0 0 0;
 	overflow-y: scroll;
-	height: 400px;
+	background: #fff;
 }
 .friends-list li{
 	font-size: 12px;
@@ -173,7 +174,7 @@ li.friends-active{
 	width: 300px;
 	padding: 0;
 	background: #fff;
-    border: 1px solid #d8d8d8;
+	border: 1px solid #d8d8d8;
 }
 .chat-top-bar{
 	padding: 0;
@@ -182,7 +183,7 @@ li.friends-active{
 .chat-top-bar h3{
 	font-size: 12px;
 	font-style: italic;
-    line-height: 1.5;
+	line-height: 1.5;
 }
 .chat-top-bar h3 img{
 	margin-top: -2px;
@@ -289,7 +290,7 @@ p.chat-panel-message{
 	margin-left: 50%;
 }
 li.social-list img{
- 	margin: 5px 0 0;
+	margin: 5px 0 0;
 }
 .main{
 	background: #fff;
@@ -369,13 +370,15 @@ li.social-list img{
 		left: 0;
 	}
 	.menu-background{
-		width: 1200px;
-		margin-top: 5px;
-		margin-left: -240px;
+		width: 100%;
+		height: 100%;
+		top: 53px;
+		left: 0;
+		position: fixed;
 		border: none;
 		border-radius: 0;
 		border-bottom: 3px solid #E43F3F;
-	    background: #d8d8d8;
+		background: #d8d8d8;
 	}
 	.menu-xbox{
 		margin-left: 370px;
@@ -385,8 +388,8 @@ li.social-list img{
 		background: #363636;
 	}
 	.login-text{
-    	margin: 135px 0 0 15px;
-   	}
+		margin: 135px 0 0 15px;
+	}
 	.border-bottom:hover{
 		box-shadow: 0 5px 0 #fff;
 	}
@@ -429,7 +432,7 @@ li.social-list img{
 		height: 50px;
 	}
 	li.social-list img{
-	 	margin: 8px 0 0 0;
+		margin: 8px 0 0 0;
 	}
 }
 @media screen and (min-width: 1200px){
@@ -439,9 +442,9 @@ li.social-list img{
 }
 @media screen and (min-width: 1280px){
 	.login-text{
-    	margin: 135px 0 0 45px;
-   	}
-   	#target .menu-box li a img{
+		margin: 135px 0 0 45px;
+	}
+	#target .menu-box li a img{
 		width: 70%;
 	}
 }
