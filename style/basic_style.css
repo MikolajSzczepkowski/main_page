@@ -157,12 +157,12 @@ li.friends-active{
 	height: 325px;
 }
 .chat-right-buffer{
-	right: 27%;
-	transition: right 0.2s;
+	right: 0;
+
 }
 .chat-right-buffer-clear{
 	right: 20px;
-	transition: right 0.2s;
+
 }
 .chat-window{
 	width: 300px;
@@ -430,6 +430,9 @@ li.social-list img{
 	}
 	.social-list:nth-child(3){
 		margin-left: 10px;
+	}
+	.chat-right-buffer{
+		right: 27%;
 	}
 }
 @media screen and (min-width: 1024px){

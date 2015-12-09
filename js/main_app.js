@@ -53,6 +53,7 @@ $(function (){
 		var $thisId = $this.parents("div.chat-window").attr("id");
 		$("div#"+ $thisId).remove();
 		$("a#"+ $thisId).removeClass("clicked");
+		chatBoxCounter --;
 	});
 	$(document).on("click", ".friends-list li", function() {
 		var ul = "<ul class='row friends-list-buttons'></ul>",
@@ -77,8 +78,23 @@ $(function (){
 				type: "GET",
 				success: function(data){		
 					leftChatPosition = $(".chat-window").eq(0).offset();		
-					console.log(leftChatPosition);
-					if (chatBoxCounter > 3) {
+					if (chatBoxCounter > 1 && pageWidth < 630) {
+						$("#chatContainer").append($(data).find(".chat-window"));
+						$(".chat-window").last().addClass("left-chat-window");
+					}
+					else if (chatBoxCounter > 2 && pageWidth < 1200) {
+						$("#chatContainer").append($(data).find(".chat-window"));
+						$(".chat-window").last().addClass("left-chat-window");
+					}
+					else if (chatBoxCounter > 3 && pageWidth < 1500) {
+						$("#chatContainer").append($(data).find(".chat-window"));
+						$(".chat-window").last().addClass("left-chat-window");
+					}
+					else if (chatBoxCounter > 4 && pageWidth < 1900) {
+						$("#chatContainer").append($(data).find(".chat-window"));
+						$(".chat-window").last().addClass("left-chat-window");
+					}
+					else if (chatBoxCounter > 5 && pageWidth >= 1900) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
 					}
@@ -93,8 +109,8 @@ $(function (){
 		else{
 			$("#chatContainer").find("div#"+id).remove();
 			$(this).removeClass("clicked");
+			chatBoxCounter--;
 		}
-		console.log(chatBoxCounter);
 	});
 
 	$("#chat").on("click", function(){
