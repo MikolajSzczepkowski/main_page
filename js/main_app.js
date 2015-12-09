@@ -3,7 +3,7 @@ $(function (){
 		pageWidth = $(document).width(),
 		menuBoxHeight = $(document).find("#firstMenuBox").height()+20,
 		leftChatPosition = null,
-		chatBoxCounter =0;
+		chatBoxCounter = 0;
 
 	if(pageWidth>=990){
 		$(".friends-list").css("height", pageHeight);
@@ -27,6 +27,10 @@ $(function (){
 			$("#secondMenuBox").css("margin-top", menuBoxHeight);
 		}
 	});
+	$(document).on("click", "#target", function() {
+		$("#menuBackground").css("height", (menuBoxHeight-16));
+	});
+
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);
 		if (!$this.hasClass("panel-collapsed")) {
