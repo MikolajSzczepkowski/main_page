@@ -39,7 +39,6 @@ $(function (){
 			$this.removeClass("glyphicon-minus").addClass("glyphicon-plus");
 			if ($this.parents(".chat-window").hasClass("left-chat-window")) {
 				$this.parents(".chat-window").animate({top: "273px"});
-				console.log("heja")
 			}
 			else{
 				$this.parents(".chat-window").animate({top: "285px"});
