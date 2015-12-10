@@ -8,7 +8,7 @@ $(function (){
 	if(pageWidth>=990){
 		$(".friends-list").css("height", pageHeight);
 		$("#secondMenuBox").css("margin-top", "5px");
-		$("#menuBackground").css("height", (menuBoxHeight-16));
+		$("#menuBackground").css("height", (menuBoxHeight-16)+"px");
 	}
 	else{
 		$(".friends-list").css("height", "400px");
@@ -26,9 +26,6 @@ $(function (){
 			$(".friends-list").css("height", "400px");
 			$("#secondMenuBox").css("margin-top", menuBoxHeight);
 		}
-	});
-	$(document).on("click", "#target", function() {
-		$("#menuBackground").css("height", (menuBoxHeight-16));
 	});
 
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
