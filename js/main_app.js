@@ -1,5 +1,5 @@
 $(function (){
-	var pageHeight = $(window).height()-186;
+	var pageHeight = $(window).height()-186,
 		pageWidth = $(document).width(),
 		menuBoxHeight = $(document).find("#firstMenuBox").height()+20,
 		leftChatPosition = null,
@@ -26,11 +26,6 @@ $(function (){
 			$(".friends-list").css("height", "400px");
 			$("#secondMenuBox").css("margin-top", menuBoxHeight);
 		}
-	});
-	$(document).on("click", "#target", function() {
-		menuBoxHeight = $(document).find("#firstMenuBox").height()+20;
-		console.log(menuBoxHeight);
-		$("#menuBackground").css("height", (menuBoxHeight-16));
 	});
 
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
