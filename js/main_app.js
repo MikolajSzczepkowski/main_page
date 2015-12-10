@@ -70,7 +70,8 @@ $(function (){
 	$(document).on("click", "#chatOn a", function(e){
 		e.preventDefault();
 		var url = this.href,
-			id = $(this).attr("id");
+			id = $(this).attr("id"),
+			chatInfo = "<div id='chatInfo' class='badge chat-info'><img src='images/message.png'><span></span></div>";
 		if (!$(this).hasClass("clicked")) {
 			$.ajax({
 				url: url,
@@ -81,25 +82,35 @@ $(function (){
 					if (chatBoxCounter > 1 && pageWidth < 630) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
+						$("#chatContainer").prepend(chatInfo);
+						$("#chatInfo span").text(chatBoxCounter-1);
 					}
 					else if (chatBoxCounter > 2 && pageWidth < 1200) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
+						$("#chatContainer").prepend(chatInfo);
+						$("#chatInfo span").text(chatBoxCounter-2);
 					}
 					else if (chatBoxCounter > 3 && pageWidth < 1500) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
+						$("#chatContainer").prepend(chatInfo);
+						$("#chatInfo span").text(chatBoxCounter-3);
 					}
 					else if (chatBoxCounter > 4 && pageWidth < 1900) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
+						$("#chatContainer").prepend(chatInfo);
+						$("#chatInfo span").text(chatBoxCounter-4);
 					}
 					else if (chatBoxCounter > 5 && pageWidth >= 1900) {
 						$("#chatContainer").append($(data).find(".chat-window"));
 						$(".chat-window").last().addClass("left-chat-window");
+						$("#chatContainer").prepend(chatInfo);
+						$("#chatInfo span").text(chatBoxCounter-5);
 					}
 					else{
-						$("#chatContainer").append($(data).find(".chat-window"));
+						$("#chatContainer").prepend($(data).find(".chat-window"));
 					}
 				}
 			});

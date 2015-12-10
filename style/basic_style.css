@@ -167,7 +167,7 @@ li.friends-active{
 .chat-window{
 	width: 300px;
 	padding: 0 15px;
-	margin: 0 5px;
+	margin: 0 5px -8px 5px;
 	display: inline-block;
 }
 .chat-window-inner{
@@ -272,6 +272,38 @@ p.chat-panel-message{
 	cursor: pointer;
 	color: #d8d8d8;
 	position: absolute;
+}
+.chat-info{
+	left: 0;
+	bottom: 0;
+	margin-left: -30px;
+	position: absolute;
+	cursor: pointer;
+}
+.chat-info div{
+	background: #fff;
+	border: 1px solid #d8d8d8;
+	color: #333;
+}
+.chat-info div:hover{
+	background: #d8d8d8;
+}
+.chat-info div img{
+	padding-right: 3px;
+}
+.chat-info ul{
+	padding: 0;
+	margin-bottom: 5px;
+	list-style: none;
+	background: #fff;
+	border-radius: 5px; 
+}
+.chat-info ul li{
+	padding: 3px;
+	border-radius: 5px; 
+}
+.chat-info ul li:hover{
+	background: #d8d8d8;
 }
 .social{
 	height: 50px;
