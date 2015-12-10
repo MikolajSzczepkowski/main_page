@@ -29,6 +29,12 @@ $(function (){
 		}
 	});
 
+	$(document).on("click", "#target", function() {
+		menuBoxHeight = $(document).find("#firstMenuBox").height()+20;
+		console.log(menuBoxHeight);
+		$("#menuBackground").css("height", (menuBoxHeight-16));
+	});
+
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);
 		if (!$this.hasClass("panel-collapsed")) {
