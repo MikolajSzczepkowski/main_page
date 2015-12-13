@@ -122,6 +122,7 @@ body{
 }
 .friends-list li img{
 	width: 30px;
+	margin-right: 5px;
 }
 li.friends-active{
 	list-style-image: url(./../images/list-bullet-blue.png);
@@ -169,6 +170,7 @@ li.friends-active{
 	padding: 0 15px;
 	margin: 0 5px -8px 5px;
 	display: inline-block;
+	z-index: 5;
 }
 .chat-window-inner{
 	width: 300px;
@@ -187,6 +189,7 @@ li.friends-active{
 }
 .chat-top-bar h3 img{
 	margin-top: -2px;
+	margin-right: 5px;
 }
 .chat-top-bar span{
 	color: #363636;
@@ -278,7 +281,9 @@ p.chat-panel-message{
 	bottom: 0;
 	margin-left: -30px;
 	position: absolute;
+	display: none;
 	cursor: pointer;
+	z-index: 15;
 }
 .chat-info div{
 	background: #fff;
@@ -296,11 +301,13 @@ p.chat-panel-message{
 	margin-bottom: 5px;
 	list-style: none;
 	background: #fff;
-	border-radius: 5px; 
+	border: 1px solid #d8d8d8;
+	border-radius: 5px;
+	display: none;
 }
 .chat-info ul li{
-	padding: 3px;
-	border-radius: 5px; 
+	padding: 3px 10px 3px 5px;
+	border-radius: 5px;
 }
 .chat-info ul li:hover{
 	background: #d8d8d8;
