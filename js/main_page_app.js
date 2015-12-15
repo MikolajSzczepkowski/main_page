@@ -1,11 +1,22 @@
 $(function (){
 	var percent = 0,
 		bar = $('.transition-timer-carousel-progress-bar'),
-		crsl = $('#myCarousel');
+		crsl = $('#myCarousel'),
+		selectedDates = ["9-12-2015", "14-12-2015", "15-12-2015", "24-12-2015"];
+
+	function setActiveDays(date) {
+	    dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
+	    if ($.inArray(dmy, selectedDates) == -1) {
+	        return [false, ""];
+	    } else {
+	        return [true, "", "Event"];
+	    }
+	}
 
 	$( "#calendar" ).datepicker({showOtherMonths: true,
 					selectOtherMonths: true,
-					firstDay: 1
+					firstDay: 1,
+					beforeShowDay: setActiveDays
 	});
 	
 	function progressBarCarousel() {
@@ -16,16 +27,16 @@ $(function (){
 				crsl.carousel('next');
 				}      
 			}
-	crsl.carousel({
-		interval: false,
-		pause: true
-	}).on('slid.bs.carousel', function () {percent=0;});var barInterval = setInterval(progressBarCarousel, 30);
-	crsl.hover(
-		function(){
-			clearInterval(barInterval);
-			},
-		function(){
-			barInterval = setInterval(progressBarCarousel, 30);
+		crsl.carousel({
+			interval: false,
+			pause: true
+		}).on('slid.bs.carousel', function () {percent=0;});var barInterval = setInterval(progressBarCarousel, 30);
+		crsl.hover(
+			function(){
+				clearInterval(barInterval);
+				},
+			function(){
+				barInterval = setInterval(progressBarCarousel, 30);
 	});
 	
 	$(".newest").on("mouseenter", function(){

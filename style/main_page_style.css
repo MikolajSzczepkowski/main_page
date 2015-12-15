@@ -112,6 +112,14 @@
 	border-right: 4px solid #fff;
 	color: #fff;
 }
+.ui-state-disabled, .ui-widget-content .ui-state-disabled{
+	border: 0;
+	background: #fff;
+	cursor: pointer;
+}
+.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled span{
+	opacity: 0.3;
+}
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default{
 	height: 40px;
 	padding-top: 8px;
@@ -121,11 +129,11 @@
 	font-family: arial;
 	font-weight: bold;
 }
-.ui-datepicker-current-day .ui-state-default{
+div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
 	background: #ff3838;
 }
 .ui-datepicker-today .ui-state-default{
-	background: #1182f5;
+	color: #1182f5;
 }
 .newest-wrapper div{
 	padding-left: 0;
