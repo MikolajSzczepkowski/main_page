@@ -133,7 +133,7 @@ div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
 	background: #ff3838;
 }
 .ui-datepicker-today .ui-state-default{
-	color: #1182f5;
+    border: 2px solid #1182f5;
 }
 .newest-wrapper div{
 	padding-left: 0;
