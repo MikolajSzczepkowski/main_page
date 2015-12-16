@@ -112,7 +112,7 @@ $(function (){
 		else if (chatBoxCounter === 4 && pageWidth >= 1500) {
 			$("#chatInfo").fadeOut(200);
 		}
-		else if (chatBoxCounter === 5 && pageWidth >= 1900) {
+		else if (chatBoxCounter === 5 && pageWidth >= 1950) {
 			$("#chatInfo").fadeOut(200);
 		};
 	};
@@ -156,11 +156,11 @@ $(function (){
 						$("#chatInfo").fadeIn(200);
 						$("#chatInfo ul").prepend("<li data-name='"+$thisDataName+"'>"+$thisDataName+"</li>");
 					}
-					else if (chatBoxCounter > 4 && pageWidth < 1900) {
+					else if (chatBoxCounter > 4 && pageWidth < 1950) {
 						$("#chatInfo").fadeIn(200);
 						$("#chatInfo ul").prepend("<li data-name='"+$thisDataName+"'>"+$thisDataName+"</li>");
 					}
-					else if (chatBoxCounter > 5 && pageWidth >= 1900) {
+					else if (chatBoxCounter > 5 && pageWidth >= 1950) {
 						$("#chatInfo").fadeIn(200);
 						$("#chatInfo ul").prepend("<li data-name='"+$thisDataName+"'>"+$thisDataName+"</li>");
 					}
