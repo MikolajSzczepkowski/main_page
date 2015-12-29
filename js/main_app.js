@@ -35,7 +35,7 @@ $(function (){
 	}
 	$(window).resize(function(){
 		pageHeight = $(window).height()-195,
-		pageWidth = $(document).width()
+		pageWidth = $(document).width();
 		if(pageWidth>=990){
 			$(".friends-list").css("height", pageHeight);
 		}
