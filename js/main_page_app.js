@@ -56,4 +56,12 @@ $(function (){
 	$(".newest-tournament").on("mouseleave", function(){
 		$(".newest-hover").remove();
 	});
+	$(document).on("mouseenter", ".newest-hover p", function(){
+		$(this).addClass("active");
+		$(this).siblings().addClass("active");	
+	});
+	$(document).on("mouseleave", ".newest-hover p", function(){
+		$(this).removeClass("active")
+		$(this).siblings().removeClass("active")
+	});
 });

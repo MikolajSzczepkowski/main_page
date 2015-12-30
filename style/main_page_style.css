@@ -1,7 +1,3 @@
-#user img{
-	width: 35px;
-	border: 2px solid #e43f3f;
-}
 .banner-carousel{
 	margin: 0 0 80px 0;
 	padding: 0;
@@ -177,10 +173,14 @@ div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
     z-index: 10;
     background: rgba(250, 250, 250, 0.9);
     bottom: 35px;
+    cursor: pointer;
 }
 .newest-hover p{
 	width: 50%;
 	margin: 10px auto;
+}
+.newest-hover p.active{
+	background: #d8d8d8;
 }
 .newest-hover p:nth-of-type(1){
 	width: 40%;
