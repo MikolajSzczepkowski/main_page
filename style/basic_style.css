@@ -95,7 +95,6 @@ body{
 	color: #333;
 }
 #target .menu-box li a img{
-
 	padding-right: 20px;
 }
 .pointer{
@@ -115,6 +114,7 @@ body{
 	line-height: 2;
 }
 .friends{
+	display: none;
 	background: #fff;
 	border-left: 1px solid #d8d8d8;
 	padding: 73px 0 0 0;
@@ -388,7 +388,6 @@ li.social-list img{
 .footer{
 	background: #363636;
 	border-top: 5px solid #e43f3f;
-	border-bottom: 10px solid #363636;
 }
 .footer a{
 	text-decoration: none;
@@ -400,17 +399,12 @@ li.social-list img{
 .footer h2{
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18px;
-	padding-top: 5px;
-}
-.footer nav{
-	padding-top: 5px;
 }
 .footer ul{
-	padding-top: 5px;
-	height: 50px;
+	margin: 0;
 }
 .footer ul li{
-	padding: 20px 10px; 
+	padding: 20px 10px 10px 10px; 
 	display: inline-block;
 	list-style: none;
 	font-weight: bold;
@@ -525,6 +519,7 @@ li.social-list img{
 	.chat-right-buffer{
 		right: 27%;
 	}
+	
 }
 @media screen and (min-width: 1024px){
 	.social{

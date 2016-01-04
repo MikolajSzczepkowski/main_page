@@ -1,6 +1,7 @@
 $(function (){
-	var pageHeight = $(window).height()-186,
+	var pageHeight = $(window).height(),
 		pageWidth = $(document).width(),
+		htmlHeight = $("html").height(),
 		chatBoxCounter = 0,
 		allFriends = [
 			{id: "Depsperados_PL",
@@ -28,16 +29,18 @@ $(function (){
 		];
 
 	if(pageWidth>=990){
-		$(".friends-list").css("height", pageHeight);
+		$(".friends-list").css("height", (pageHeight-186));
+		$(".main-inner-wrapper").css("padding-bottom", (pageHeight - htmlHeight));
 	}
 	else{
 		$(".friends-list").css("height", "400px");
 	}
 	$(window).resize(function(){
-		pageHeight = $(window).height()-195,
+		pageHeight = $(window).height(),
 		pageWidth = $(document).width();
 		if(pageWidth>=990){
-			$(".friends-list").css("height", pageHeight);
+			$(".friends-list").css("height", (pageHeight - 195));
+			$(".main-inner-wrapper").css("padding-bottom", (pageHeight - htmlHeight));
 		}
 		else{
 			$(".friends-list").css("height", "400px");
