@@ -9,6 +9,11 @@ body{
 	background: #fff;
 	border-bottom: 5px solid #e43f3f;
 }
+.nav-wrapper ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
 .nav-wrapper div img{
 	margin: 10px 0;
 }
@@ -18,7 +23,7 @@ body{
 #user{
 	display: inline-block;
 }
-.user-avatar img{
+.user-avatar a img{
 	width: 35px;
 	border: 2px solid #e43f3f;
 }
@@ -30,12 +35,14 @@ body{
 	background: #d8d8d8;
 }
 .menu-box{
+	top: 55px;
 	list-style: none;
 	margin-top: 5px;
 	box-shadow: none;
 	border-radius: 0;
 	padding: 0;
 	background: #d8d8d8;
+	border: 0;
 	border-bottom: 3px solid #e43f3f;
 }
 .menu-box li{
@@ -52,12 +59,10 @@ body{
 	max-width: 100%;
 	margin: 0;
 }
-#target .menu-box{
+#target .menu-box {
+	top: 0;
 	margin: 0; 
 	display: inline-block;
-	border: 1px solid rgba(0,0,0,.15);
-	border-bottom: none;
-	border-top: none; 
 }
 #target #firstMenuBox{
 	margin-bottom: 10px;
@@ -69,6 +74,8 @@ body{
 }
 #target .menu-box li:first-child{
 	height: 63px;
+	padding: 5px 0 0 0;
+	display: inline-block;
 	background: #fff;
 }
 #target .menu-box li:first-child:hover{
@@ -76,10 +83,9 @@ body{
 	color: #333;
 }
 #target .menu-box li:first-child h6{
-	height: 63px;
-	width: 250px;
-	padding: 20px 90px 0 30px;
-	margin: 0;
+	width: 280px;
+	padding: 0 0 0 30px; 
+	display: inline-block;
 	font-size: 14px;
 }
 #target .menu-box li:hover {
@@ -119,6 +125,12 @@ body{
 	border-left: 1px solid #d8d8d8;
 	padding: 73px 0 0 0;
 }
+.friends-search-wrapper ul li.active{
+	background: #1182f5;
+}
+.friends-search-wrapper ul li:hover{
+	background: #1182f5;
+}
 .friends-search-img{
 	width: 30px;
 	height: 30px;
@@ -131,20 +143,26 @@ body{
 .friends-search-img img{
 	width: 30px;
 }
-#userSearch{
+#friendSearch{
+	padding: 1px 5px;
 	font-style: italic;
 	font-weight: lighter;
 }
+.friends-wrapper{
+	height: 400px;
+	overflow-y: scroll;
+	background: #fff;
+}
 .friends-header{
+	margin: 10px 0 0 0;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d8d8d8;
 	font-size: 12px;
 	font-style: italic;
-	margin: 10px 0 0 0;
-	border-bottom: 1px solid #d8d8d8; 
 }
 .friends-list{
-	height: 400px;
-	margin: 5px 0 0 0;
-	overflow-y: scroll;
+	padding: 0;
+	margin: 5px 0 10px 0;
 	background: #fff;
 }
 .friends-list li{
@@ -184,7 +202,7 @@ li.friends-active{
 .friends-list-buttons li img{
 	width: 15px;
 }
-.friends-list-buttons li img:hover{
+.friends-list-buttons li:hover img{
 	transform: translateY(-5px);
 }
 .chat-row{
@@ -198,11 +216,9 @@ li.friends-active{
 }
 .chat-right-buffer{
 	right: 0;
-
 }
 .chat-right-buffer-clear{
 	right: 20px;
-
 }
 .chat-window{
 	width: 300px;
@@ -220,6 +236,13 @@ li.friends-active{
 .chat-top-bar{
 	padding: 0;
 	border-radius: 0;
+}
+.chat-top-bar a{
+	text-decoration: none;
+	color: #333;
+}
+.chat-top-bar a:hover{
+	color: #E43F3F;
 }
 .chat-top-bar h3{
 	font-size: 12px;
@@ -462,8 +485,11 @@ li.social-list img{
 	.menu-box{
 		left: 0;
 	}
+	#target .menu-box{
+		border-bottom: 0;
+	}
 	#target #firstMenuBox{
-		margin-left: 26%;
+		margin-left: 26.6%;
 	}
 	.menu-background{	
 		width: 100%;
@@ -495,9 +521,6 @@ li.social-list img{
 	.friends-row{
 		float: right;
 	}
-	.friends-list{
-		height: inherit;
-	}
 	#userSearch{
 		width: 100%;
 	}
@@ -528,14 +551,40 @@ li.social-list img{
 	li.social-list img{
 		margin: 8px 0 0 0;
 	}
+	#target #firstMenuBox{
+		margin-left: 26.5%;
+	}
 }
 @media screen and (min-width: 1200px){
 	.chat-right-buffer{
 		right: 18%;
 	}
+	#target #firstMenuBox{
+		margin-left: 26.25%;
+	}
 }
 @media screen and (min-width: 1280px){
 	.login-text{
 		margin: 135px 0 0 45px;
+	}
+}
+@media screen and (min-width: 1360px){
+	#target #firstMenuBox{
+		margin-left: 26.1%;
+	}
+}
+@media screen and (min-width: 1600px){
+	#target #firstMenuBox{
+		margin-left: 25.95%;
+	}
+}
+@media screen and (min-width: 1680px){
+	#target #firstMenuBox{
+		margin-left: 25.9%;
+	}
+}
+@media screen and (min-width: 1920px){
+	#target #firstMenuBox{
+		margin-left: 25.8%;
 	}
 }

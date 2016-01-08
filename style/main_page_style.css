@@ -89,6 +89,9 @@
 	width: 14%;
 	height: 100%;
 }
+.ui-widget-header .ui-icon {
+    background-image: url(./../jquery-ui-1.11.4/images/ui-icons_ffffff_256x240.png);
+}
 .ui-state-hover, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-hover{
 	background: none;
 	border: none; 
@@ -132,13 +135,14 @@ div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
     border: 2px solid #1182f5;
 }
 .newest-wrapper div{
-	padding-left: 0;
+	padding: 0;
+}
+.newest, .newest-tournament{
+	width: 160px;
+	margin-right: 15px;
 }
 .newest-wrapper .active img{
 	border: 2px solid #1182f5;
-}
-.newest-wrapper .active p{
-	background: #1182f5;
 }
 .newest-wrapper div img{
 	width: 160px;
@@ -147,13 +151,12 @@ div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
 .newest-wrapper div h5{
 	font-size: 14px;
 	font-weight: bold;
-	padding: 50px 0;
-
+	padding: 30px 0 20px 0;
 }
 .newest-wrapper div h5 div{
-	width: 40px;
-	height: 40px;
-	margin: 0 20px -15px 0;
+	width: 10px;
+	height: 10px;
+	margin: 0 10px 0 0;
 	display: inline-block;
 	background: #363636;
 }
