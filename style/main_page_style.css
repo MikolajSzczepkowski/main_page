@@ -142,11 +142,11 @@ div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
 	margin-right: 15px;
 }
 .newest-wrapper .active img{
-	border: 2px solid #1182f5;
+	border: 3px solid #1182f5;
 }
 .newest-wrapper div img{
 	width: 160px;
-	border: 2px solid #363636;
+	border: 3px solid #363636;
 }
 .newest-wrapper div h5{
 	font-size: 14px;
