@@ -593,6 +593,9 @@ li.social-list img{
 	#gameButton #firstMenuBox{
 		margin-left: 25.95%;
 	}
+	#alert{
+		width: 3%;
+	}
 }
 @media screen and (min-width: 1680px){
 	#gameButton #firstMenuBox{
