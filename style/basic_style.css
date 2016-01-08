@@ -20,7 +20,7 @@ body{
 .menu-size{
 	height: 50px;
 }
-#user{
+#user div{
 	display: inline-block;
 }
 .user-avatar a img{
@@ -59,48 +59,48 @@ body{
 	max-width: 100%;
 	margin: 0;
 }
-#target .menu-box {
+#gameButton .menu-box {
 	top: 0;
 	margin: 0; 
 	display: inline-block;
 }
-#target #firstMenuBox{
+#gameButton #firstMenuBox{
 	margin-bottom: 10px;
 	border-bottom: 3px solid #e43f3f;
 }
-#target .menu-box li{
+#gameButton .menu-box li{
 	width: 350px;
 	height: 90px;
 }
-#target .menu-box li:first-child{
+#gameButton .menu-box li:first-child{
 	height: 63px;
 	padding: 5px 0 0 0;
 	display: inline-block;
 	background: #fff;
 }
-#target .menu-box li:first-child:hover{
+#gameButton .menu-box li:first-child:hover{
 	background: #fff;
 	color: #333;
 }
-#target .menu-box li:first-child h6{
+#gameButton .menu-box li:first-child h6{
 	width: 280px;
 	padding: 0 0 0 30px; 
 	display: inline-block;
 	font-size: 14px;
 }
-#target .menu-box li:hover {
+#gameButton .menu-box li:hover {
 	background: #e43f3f; 
 }
-#target .menu-box li:hover a{
+#gameButton .menu-box li:hover a{
 	color: #fff;
 }
-#target .menu-box li a{
+#gameButton .menu-box li a{
 	padding: 0;
 	display: inline-block;
 	text-decoration: none;
 	color: #333;
 }
-#target .menu-box li a img{
+#gameButton .menu-box li a img{
 	padding-right: 20px;
 }
 .pointer{
@@ -443,7 +443,7 @@ li.social-list img{
 	.menu-box{
 		left: 45%;
 	}
-	#target .menu-box{
+	#gameButton .menu-box{
 		position: relative;
 		left: 10%;
 	}
@@ -458,7 +458,7 @@ li.social-list img{
 	.social-list:nth-child(3){
 		margin-left: 50%;
 	}
-	#target .menu-box{
+	#gameButton .menu-box{
 		position: relative;
 		left: 20%;
 	}
@@ -467,11 +467,11 @@ li.social-list img{
 	.footer nav ul li:nth-child(1){
 		margin: 0;
 	}
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-bottom: 0;
 		border-bottom: none;
 	}
-	#target .menu-box{
+	#gameButton .menu-box{
 		position: relative;
 		left: 0;
 	}
@@ -485,10 +485,10 @@ li.social-list img{
 	.menu-box{
 		left: 0;
 	}
-	#target .menu-box{
+	#gameButton .menu-box{
 		border-bottom: 0;
 	}
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 26.6%;
 	}
 	.menu-background{	
@@ -551,7 +551,7 @@ li.social-list img{
 	li.social-list img{
 		margin: 8px 0 0 0;
 	}
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 26.5%;
 	}
 }
@@ -559,8 +559,24 @@ li.social-list img{
 	.chat-right-buffer{
 		right: 18%;
 	}
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 26.25%;
+	}
+	#user{
+		padding-left: 0;
+		padding-top: 15px;
+		text-align: left;
+	}
+	#user div{
+		margin-top: -15px;
+		float: left;
+	}
+	#coins, #alert{
+		width: 5%;
+		padding: 0;
+	}
+	#coins div, #alert div{
+		float: right;
 	}
 }
 @media screen and (min-width: 1280px){
@@ -569,22 +585,22 @@ li.social-list img{
 	}
 }
 @media screen and (min-width: 1360px){
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 26.1%;
 	}
 }
 @media screen and (min-width: 1600px){
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 25.95%;
 	}
 }
 @media screen and (min-width: 1680px){
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 25.9%;
 	}
 }
 @media screen and (min-width: 1920px){
-	#target #firstMenuBox{
+	#gameButton #firstMenuBox{
 		margin-left: 25.8%;
 	}
 }
