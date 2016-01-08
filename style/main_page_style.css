@@ -131,8 +131,11 @@
 div#calendar div.ui-datepicker table tbody tr td a.ui-state-default{
 	background: #ff3838;
 }
+div#calendar div.ui-datepicker table tbody tr td a.ui-state-default.ui-state-hover{
+	opacity: 0.5;
+}
 .ui-datepicker-today .ui-state-default{
-    border: 2px solid #1182f5;
+    border: 3px solid #1182f5;
 }
 .newest-wrapper div{
 	padding: 0;
