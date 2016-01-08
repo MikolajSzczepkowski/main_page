@@ -157,8 +157,10 @@ $(function (){
 			}
 		};
 	});
-	$(document).on("click", ".friends-list-buttons li", function(){
-		$(this).find("img").attr("src", "images/liked-team.png");
+	$(document).on("click", "#teamsList .friends-list-buttons li", function(){
+		if ($(this).find("img").attr("alt")==="like") {
+			$(this).find("img").attr("src", "images/liked-team.png");
+		}
 	});
 
 	$(document).on("click", "#chatOn a", function(e){
