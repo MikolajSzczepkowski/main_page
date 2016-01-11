@@ -115,6 +115,44 @@ body{
 .have-alert span{
 	background: #e43f3f;
 }
+#alert div .menu-box{
+	width: 280px;
+	max-height: 500px;
+	margin: 0;
+	padding: 0 10px 20px 10px;
+	background: #fff;
+	overflow-y: auto;
+}
+#alert div .menu-box h6{
+	padding: 0 0 5px 0;
+	font-style: italic;
+	border-bottom: 1px solid #d8d8d8;
+}
+#alert div .menu-box ul li{
+	margin: 0 0 5px 0;
+	padding: 15px 10px 10px 10px;
+	background: #e43f3f;
+	border-radius: 40px;
+}
+#alert div .menu-box ul li:hover{
+	background: #363636;
+}
+#alert div .menu-box ul li:hover img{
+	opacity: 1;
+}
+#alert div .menu-box ul li p{
+	width: 170px;
+	display: inline-block;
+	color: #fff;
+	font-style: italic;
+}
+#alert div .menu-box ul li img{
+	max-width: 100%;
+	margin: 0;
+	display: inline-block;
+	vertical-align: top;
+	opacity: 0.5;
+}
 .pointer{
 	cursor: pointer;
 }
@@ -508,11 +546,29 @@ li.social-list img{
 	}
 	.menu-background{	
 		width: 100%;
-		top: 53px;
+		top: 55px;
 		left: 0;
 		padding:0;
 		margin:0;
 		position: fixed;
+	}
+	#alert div .menu-box{
+		width: 400px;
+	}
+	#alert div .menu-box ul li{
+		margin: 0 0 5px 0;
+		padding: 15px 0 10px 20px;
+		background: #e43f3f;
+		border-radius: 60px;
+	}
+	#alert div .menu-box ul li p{
+		width: 275px;
+		display: inline-block;
+		color: #fff;
+		font-style: italic;
+	}
+	#alert div .menu-box ul li img{
+		margin: -10px 0 0 0;
 	}
 	.login{
 		height: 255px;
