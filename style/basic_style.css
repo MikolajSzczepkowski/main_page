@@ -103,6 +103,18 @@ body{
 #gameButton .menu-box li a img{
 	padding-right: 20px;
 }
+.menu-info-box{
+	margin: 10px 0 0 -15px;
+	padding: 0 4px;
+	position: absolute;
+	background: #000;
+	border-radius: 5px;
+	color: #fff;
+	font-size: 10px;
+}
+.have-alert span{
+	background: #e43f3f;
+}
 .pointer{
 	cursor: pointer;
 }
@@ -164,6 +176,9 @@ body{
 	padding: 0;
 	margin: 5px 0 10px 0;
 	background: #fff;
+}
+#teamsList.friends-list li{
+	list-style: none;
 }
 .friends-list li{
 	font-size: 12px;

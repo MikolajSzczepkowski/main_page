@@ -61,6 +61,10 @@ $(function (){
 		}
 	});
 
+	if ($("#alert").hasClass("have-alert")) {
+		$("#alert").find("img").attr("src", "images/have-alert.png");
+	}
+
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);
 		if (!$this.hasClass("panel-collapsed")) {
