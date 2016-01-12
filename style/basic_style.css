@@ -557,18 +557,15 @@ li.social-list img{
 	}
 	#alert div .menu-box ul li{
 		margin: 0 0 5px 0;
-		padding: 15px 0 10px 20px;
+		padding: 10px 10px 10px 20px;
 		background: #e43f3f;
 		border-radius: 60px;
 	}
 	#alert div .menu-box ul li p{
-		width: 275px;
+		width: 314px;
 		display: inline-block;
 		color: #fff;
 		font-style: italic;
-	}
-	#alert div .menu-box ul li img{
-		margin: -10px 0 0 0;
 	}
 	.login{
 		height: 255px;
@@ -663,9 +660,6 @@ li.social-list img{
 @media screen and (min-width: 1600px){
 	#gameButton #firstMenuBox{
 		margin-left: 25.95%;
-	}
-	#alert{
-		width: 3%;
 	}
 }
 @media screen and (min-width: 1680px){
