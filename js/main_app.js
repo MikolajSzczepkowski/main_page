@@ -70,7 +70,7 @@ $(function (){
 			convertCoverHeight = initialCoverHeight.replace(/[^0-9]/g, ''),
 			coverHeightNumber = parseInt(convertCoverHeight),
 			newHeight = coverHeightNumber + windowScroll;
-			
+
 		$(".background-cover").css("height", newHeight);
 	});
 
@@ -301,7 +301,7 @@ $(function (){
 	$(document).mouseup(function (e){
 		var container = $("#registerInnerWrapper");
 
-		if (!container.is(e.target) && container.has(e.target).length === 0){
+		if (!container.is(e.target) && container.has(e.target).length === 0 && !$("#ui-datepicker-div").is(e.target) && $("#ui-datepicker-div").has(e.target).length === 0){
 			$("#registerContainer").hide();
 		}
 	});
