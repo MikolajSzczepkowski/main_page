@@ -2,6 +2,7 @@ $(function (){
 	var pageHeight = $(window).height(),
 		pageWidth = $(document).width(),
 		htmlHeight = $("html").height(),
+		initialCoverHeight = $(".background-cover").css("height"),
 		chatBoxCounter = 0,
 		allFriends = [
 			{id: "Depsperados_PL",
@@ -64,6 +65,14 @@ $(function (){
 	if ($("#alert").hasClass("have-alert")) {
 		$("#alert div a").find("img").attr("src", "images/have-alert.png");
 	}
+	$(document).on("scroll", function(){
+		var windowScroll = $(window).scrollTop(),
+			convertCoverHeight = initialCoverHeight.replace(/[^0-9]/g, ''),
+			coverHeightNumber = parseInt(convertCoverHeight),
+			newHeight = coverHeightNumber + windowScroll;
+			
+		$(".background-cover").css("height", newHeight);
+	});
 
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);

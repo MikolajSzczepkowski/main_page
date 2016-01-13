@@ -125,7 +125,7 @@ body{
 	display: none;
 }
 .coins-payment{
-	top: 20%;
+	top: 100px;
 	background:rgba(0, 0, 0, 0.8);
 	border-top: 5px solid #e43f3f;
 	border-bottom: 3px solid #e43f3f;
@@ -242,7 +242,7 @@ body{
 	opacity: 0.5;
 }
 .covering-box{
-	top: 20%;
+	top: 100px;
 }
 .covering-box h2{
 	height: 50px;
@@ -768,7 +768,7 @@ li.social-list img{
 		font-style: italic;
 	}
 	.login-wrapper, .register-wrapper{
-		top: 20%;
+		top: 100px;
 	}
 	.login{
 		height: 255px;
