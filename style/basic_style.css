@@ -122,8 +122,6 @@ body{
 	position:absolute;
 	background:rgba(0, 0, 0, 0.5);
 	z-index: 1500;
-}
-#paymentContainer, #loginContainer{
 	display: none;
 }
 .coins-payment{
