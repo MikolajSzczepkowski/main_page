@@ -237,11 +237,11 @@
 					</li>
 				</ul>
 			</div>
-			<button class="col-xs-12 col-md-6 col-lg-4 col-lg-offset-2">
-				<img src="images/paypal.png">
+			<button class="col-xs-12 col-md-6 col-lg-4 col-lg-offset-1">
+				<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal"/>
 			</button>
-			<button class="col-xs-12 col-md-6 col-lg-4">
-				<img src="images/paypal.png">
+			<button class="col-xs-12 col-md-6 col-lg-4 col-lg-offset-1">
+				<img src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/ppcredit-logo-large.png" alt="PayPal Credit"/>
 			</button>
 		</div>
 	</div>
@@ -266,6 +266,46 @@
 					</div>
 				</form>
 				<button id="moveToRegister" class="col-xs-12 col-sm-4 col-sm-offset-4 text-uppercase text-center change-form-button">register</button>
+			</div>
+		</div>	
+	</div>
+	<div id="registerContainer" class="background-cover">
+		<div id="registerInnerWrapper" class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-4 col-md-offset-4 covering-box register-wrapper">
+			<h2 class="col-xs-12 text-center text-uppercase">logo</h2>
+			<div class="col-xs-12">
+				<form name="register" id="registerForm" class="col-xs-12">
+					<div class="col-xs-12">
+						<img src="images/username.png">
+						<input type="text" id="registerUsername" placeholder="username">
+					</div>
+					<div class="col-xs-12">
+						<img src="images/email.png">
+						<input type="text" id="registerEmail" placeholder="enter your email">
+					</div>
+					<div class="col-xs-12">
+						<img src="images/email.png">
+						<input type="text" id="registerReEmail" placeholder="repeat your email">
+					</div>
+					<div class="col-xs-12">
+						<img src="images/password.png">
+						<input type="text" id="registerPassword" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+					</div>
+					<div class="col-xs-12">
+						<img src="images/password.png">
+						<input type="text" id="registerRePassword" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+					</div>
+					<p class="col-xs-12">Please enter your date of birth:<input type="text" id="registerDatepicker" placeholder="month / day / year" class="col-xs-12 col-sm-3 text-uppercase text-center"></p>
+					<div class="col-xs-12">
+						<label for="acceptTerms" class="col-xs-12 col-sm-8">I accept terms of use and Privacy Policy</label>
+						<input type="checkbox" id="acceptTerms">
+					</div>
+					<div class="col-xs-12">
+						<span></span>
+						<input type="text" id="captcha" placeholder="captcha">
+					</div>
+					<input type="submit" name="submit-register" value="sign up" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
+				</form>
+				<button id="moveToLogin" class="col-xs-12 col-sm-4 col-sm-offset-4 text-uppercase text-center change-form-button">login</button>
 			</div>
 		</div>	
 	</div>

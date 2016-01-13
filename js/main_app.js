@@ -289,4 +289,25 @@ $(function (){
 			$("#loginContainer").hide();
 		}
 	});
+	$(document).mouseup(function (e){
+		var container = $("#registerInnerWrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+			$("#registerContainer").hide();
+		}
+	});
+
+	$("#moveToRegister").on("click", function(){
+		$("#loginContainer").hide();
+		$("#registerContainer").show();
+	});
+	$("#moveToLogin").on("click", function(){
+		$("#registerContainer").hide();
+		$("#loginContainer").show();
+	});
+
+	$("#registerDatepicker").datepicker({
+		changeYear: true,
+		yearRange: "1945:2016"
+	});
 });

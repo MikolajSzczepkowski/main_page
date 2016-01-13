@@ -323,8 +323,32 @@ body{
 	border: none;
 	font-weight: bold;
 }
-.login-wrapper{
+.login-wrapper, .register-wrapper{
 	top: 1%;
+}
+.register-wrapper form{
+	padding-bottom: 20px;
+}
+.register-wrapper form>div{
+	margin: 10px 0;
+}
+.register-wrapper form>div:nth-of-type(1){
+	margin-top: 20px;
+}
+.register-wrapper form div span{
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	float: left;
+	background: #1182f5;
+}
+.register-wrapper form p{
+	margin-top: 10px;
+	font-weight: bold;
+}
+.register-wrapper form p input{
+	width: 100%;
+	margin-top: 10px;
 }
 .friends{
 	display: none;
@@ -713,6 +737,9 @@ li.social-list img{
 	.background-cover{
 		position: fixed;
 	}
+	#registerContainer{
+		position: absolute;
+	}
 	#gameButton .menu-box{
 		border-bottom: 0;
 	}
@@ -741,6 +768,9 @@ li.social-list img{
 		display: inline-block;
 		color: #fff;
 		font-style: italic;
+	}
+	.login-wrapper, .register-wrapper{
+		top: 20%;
 	}
 	.login{
 		height: 255px;
