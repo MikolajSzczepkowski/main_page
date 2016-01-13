@@ -263,4 +263,30 @@ $(function (){
 			$(".friends-search-wrapper label input").attr("placeholder","Search users...");
 		}
 	});
+	$(document).on("click", ".coins-list ul li", function(){
+		if (!$(this).hasClass("active")) {
+			$(".coins-list ul li").removeClass("active");
+			$(this).addClass("active");
+		}
+	});
+	$("#coins").on("click", function(){
+		$("#paymentContainer").show();
+	});
+	$(document).mouseup(function (e){
+		var container = $("#paymentInnerWrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+			$("#paymentContainer").hide();
+		}
+	});
+	$("#loginRegister").on("click", function(){
+		$("#loginContainer").show();
+	});
+	$(document).mouseup(function (e){
+		var container = $("#loginInnerWrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+			$("#loginContainer").hide();
+		}
+	});
 });

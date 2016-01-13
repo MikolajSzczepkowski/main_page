@@ -112,6 +112,77 @@ body{
 	color: #fff;
 	font-size: 10px;
 }
+.background-cover{
+	width: 100%;
+	height: 100%;
+	padding:0;
+	margin:0;
+	top:0;
+	left:0;
+	position:absolute;
+	background:rgba(0, 0, 0, 0.5);
+	z-index: 1500;
+}
+#paymentContainer, #loginContainer{
+	display: none;
+}
+.coins-payment{
+	top: 20%;
+	background:rgba(0, 0, 0, 0.8);
+	border-top: 5px solid #e43f3f;
+	border-bottom: 3px solid #e43f3f;
+	color: #fff;
+}
+.coins-payment-text{
+	height: 150px;
+	margin-top: 30px;
+	padding: 10px;
+	background: #e43f3f;
+	text-align: left;
+}
+.coins-list{
+	padding: 0;
+}
+.coins-list ul{
+	padding: 0;
+}
+.coins-list ul li{
+	width: 30%;
+	padding-left: 1%;
+	display: inline-block;
+	float: left;
+	cursor: pointer;
+}
+.coins-list ul li:nth-of-type(1), .coins-list ul li:nth-of-type(4){
+	padding-left: 0;
+}
+.coins-list ul li p{
+	height: 32px;
+	margin: 0 0 5px 0;
+	padding: 0;
+	background: #e43f3f;
+	border: 1px solid #e43f3f;
+	font-weight: bold;
+	text-align: center;
+}
+.coins-list ul li p:nth-of-type(even){
+	padding-top: 5px;
+	background: #1182f5;
+	border: 1px solid #1182f5;
+}
+.coins-list ul li:hover p, .coins-list ul li.active p{
+	background: #363636;
+	border: 1px solid #fff;
+}
+.coins-list ul li p img{
+	margin: 0;
+}
+.coins-payment button{
+	margin-top: 10px;
+	margin-bottom: 10px;
+	background: none;
+	border: none;
+}
 .have-alert span{
 	background: #e43f3f;
 }
@@ -168,6 +239,92 @@ body{
 	padding-top: 5px;
 	font-weight: bold;
 	line-height: 2;
+}
+.login-text:hover{
+	opacity: 0.5;
+}
+.covering-box{
+	top: 20%;
+}
+.covering-box h2{
+	height: 50px;
+	margin: 0;
+	padding-top: 18px;
+	background: #fff;
+	color: #333;
+	font-weight: bold;
+	font-size: 14px;
+}
+.covering-box>div{
+	margin-top: 5px;
+	background: #fff;
+	border-top: 5px solid #1182f5;
+	border-bottom: 3px solid #1182f5;
+}
+.covering-box form{
+	border-bottom: 1px solid #d8d8d8;
+}
+.covering-box form>div{
+	margin: 20px 0;
+}
+.covering-box form div img{
+	max-width: 100%;
+	display: inline-block;
+	float: left;
+	background: #1182f5;
+	vertical-align: top;
+}
+.covering-box form input{
+	width: 85%;
+	height: 50px;
+	padding-left: 10px;
+	display: inline-block;
+	float: left;
+	background: #363636;
+	color: #fff;
+	border: none;
+}
+.covering-box form input[type="submit"]{
+	width: 33.33%;
+	padding: 0 15px;
+	font-weight: bold; 
+}
+.covering-box form input[type="submit"]:hover, .change-form-button:hover{
+	background: #1182f5;
+	color: #fff;
+}
+.covering-box form #forgotPassword{
+	margin-right: 3%;
+	float: right;
+	background: none;
+	border: none;
+	color: #333;
+	font-style: italic;
+}
+.covering-box form #forgotPassword:hover{
+	color: #E43F3F; 
+}
+.covering-box form label{
+	padding: 0;
+	font-style: italic;
+	font-weight: normal;
+	cursor: pointer;
+}
+.covering-box form input[type="checkbox"]{
+	width: auto;
+	height: auto;
+	cursor: pointer;
+}
+.change-form-button{
+	height: 50px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+	background: #d8d8d8;
+	border: none;
+	font-weight: bold;
+}
+.login-wrapper{
+	top: 1%;
 }
 .friends{
 	display: none;
@@ -500,7 +657,21 @@ li.social-list img{
 		position: relative;
 		left: 10%;
 	}
-}
+	.coins-list ul li{
+		width: 20%;
+	}
+	.coins-list ul li:nth-of-type(4){
+		padding-left: 1%;
+	}
+	.covering-box form input[type="submit"]{
+		margin-left: 15px;
+	}
+	.covering-box form #forgotPassword{
+		margin-right: 2%;
+	}
+	.background-cover{
+		position: fixed;
+	}
 @media screen and (min-width: 640px){
 	.social-list:nth-child(1){
 		margin-left: 40%;
@@ -515,6 +686,8 @@ li.social-list img{
 		position: relative;
 		left: 20%;
 	}
+	.covering-box form #forgotPassword{
+	margin-right: 4%;
 }
 @media screen and (min-width: 768px){
 	.footer nav ul li:nth-child(1){
@@ -528,6 +701,8 @@ li.social-list img{
 		position: relative;
 		left: 0;
 	}
+	.covering-box form #forgotPassword{
+	margin-right: 2%;
 }
 @media screen and (min-width: 990px){
 	.nav-wrapper{
@@ -610,7 +785,12 @@ li.social-list img{
 	.chat-right-buffer{
 		right: 27%;
 	}
-	
+	.covering-box form input{
+		width: 75%;
+	}
+	.covering-box form #forgotPassword{
+		margin-right: 15%;
+	}
 }
 @media screen and (min-width: 1024px){
 	.social{
@@ -621,6 +801,12 @@ li.social-list img{
 	}
 	#gameButton #firstMenuBox{
 		margin-left: 26.5%;
+	}
+	.covering-box form input{
+		width: 76%;
+	}
+	.covering-box form #forgotPassword{
+	margin-right: 0;
 	}
 }
 @media screen and (min-width: 1200px){
@@ -643,32 +829,50 @@ li.social-list img{
 		width: 5%;
 		padding: 0;
 	}
-	#coins div, #alert div{
+	#coins>div, #alert>div{
 		float: right;
+	}
+	.covering-box form input{
+		width: 81%;
 	}
 }
 @media screen and (min-width: 1280px){
 	.login-text{
 		margin: 135px 0 0 45px;
 	}
+	.covering-box form input{
+		width: 83%;
+	}
 }
 @media screen and (min-width: 1360px){
 	#gameButton #firstMenuBox{
 		margin-left: 26.1%;
+	}
+	.covering-box form input{
+		width: 84%;
 	}
 }
 @media screen and (min-width: 1600px){
 	#gameButton #firstMenuBox{
 		margin-left: 25.95%;
 	}
+	.covering-box form input{
+		width: 87%;
+	}
 }
 @media screen and (min-width: 1680px){
 	#gameButton #firstMenuBox{
 		margin-left: 25.9%;
 	}
+	.covering-box form input{
+		width: 88%;
+	}
 }
 @media screen and (min-width: 1920px){
 	#gameButton #firstMenuBox{
 		margin-left: 25.8%;
+	}
+	.covering-box form input{
+		width: 90%;
 	}
 }
