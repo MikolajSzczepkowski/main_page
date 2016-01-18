@@ -278,6 +278,7 @@ $(function (){
 			$(this).addClass("active");
 		}
 	});
+	
 	$("#coins").on("click", function(){
 		$("#paymentContainer").show();
 	});
@@ -288,6 +289,7 @@ $(function (){
 			$("#paymentContainer").hide();
 		}
 	});
+
 	$("#loginRegister").on("click", function(){
 		$("#loginContainer").show();
 	});

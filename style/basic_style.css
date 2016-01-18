@@ -253,6 +253,11 @@ body{
 	font-weight: bold;
 	font-size: 14px;
 }
+.covering-box h2 span{
+	margin-left: 5px;
+	font-style: italic;
+	font-weight: normal;
+}
 .covering-box>div{
 	margin-top: 5px;
 	background: #fff;
@@ -266,7 +271,7 @@ body{
 	margin: 20px 0;
 }
 .covering-box form div img{
-	max-width: 100%;
+	width: 50px;
 	display: inline-block;
 	float: left;
 	background: #1182f5;
@@ -281,6 +286,22 @@ body{
 	background: #363636;
 	color: #fff;
 	border: none;
+}
+.covering-box form input[type="checkbox"] {
+	display:none;
+}
+.covering-box form input[type="checkbox"] + label span {
+	width:15px;
+	height:15px;
+	margin: 0 0 -2px 0;
+	display:inline-block;
+	background:url(./../images/checkbox.png) left top no-repeat;
+}
+.covering-box form input[type="checkbox"]:checked + label span{
+	background:url(./../images/checkbox-blue.png) left top no-repeat;
+}
+.covering-box form input[type="checkbox"]#acceptTerms + label span {
+	float: right;
 }
 .covering-box form input[type="submit"]{
 	width: 33.33%;
@@ -862,6 +883,9 @@ li.social-list img{
 	}
 	.covering-box form input{
 		width: 81%;
+	}
+	.covering-box form input[type="checkbox"]#acceptTerms + label span {
+		margin-right: -15px;
 	}
 }
 @media screen and (min-width: 1280px){
