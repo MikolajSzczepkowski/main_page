@@ -63,7 +63,7 @@ $(function (){
 	});
 
 	if ($("#alert").hasClass("have-alert")) {
-		$("#alert div a").find("img").attr("src", "images/have-alert.png");
+		$("#alert").find("div:first-child img").attr("src", "images/have-alert.png");
 	}
 	$(document).on("scroll", function(){
 		var windowScroll = $(window).scrollTop(),

@@ -14,29 +14,26 @@
 <div class="container-fluid">
 	<nav id="navigation" class="row text-center nav-wrapper">
 		<ul>
-			<li class="col-md-1 col-md-offset-1">
-				<div id="menu" class="dropdown menu-size text-center pointer border-bottom">
-					<a href="#" data-toggle="dropdown" data-target="#">
-						<img src="images/icon-menu.png" alt="menu">
-					</a>
-					<ul class="dropdown-menu menu-box">
-						<li>
-							<a href="#"><img src="images/home.gif" alt="home">Home</a>
-						</li>
-						<li>
-							<a href="#"><img src="images/tv.gif" alt="tv">TV</a>
-						</li>
-						<li>
-							<a href="#"><img src="images/rank.gif" alt="ranking">Leaderboards</a>
-						</li>
-					</ul>
+			<li class="col-md-1 col-md-offset-1 dropdown">
+				<div id="menu" class="menu-size text-center pointer border-bottom" data-toggle="dropdown">
+					<img src="images/icon-menu.png" alt="menu">
 				</div>
+				<ul class="dropdown-menu menu-box">
+					<li>
+						<a href="#"><img src="images/home.gif" alt="home">Home</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/tv.gif" alt="tv">TV</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/rank.gif" alt="ranking">Leaderboards</a>
+					</li>
+				</ul>
 			</li>
-			<li class="col-md-1 col-md-offset-1">
-				<div id="gameButton" class="dropdown menu-size text-center pointer border-bottom">
-					<a href="#" data-toggle="dropdown" data-target="#">
-						<img src="images/game-menu.png" alt="game menu">
-					</a>
+			<li class="col-md-1 col-md-offset-1 dropdown">
+				<div id="gameButton" class="menu-size text-center pointer border-bottom" data-toggle="dropdown">
+					<img src="images/game-menu.png" alt="game menu">
+				</div>
 					<div id="menuBackground" class="dropdown-menu menu-background">
 						<ul id="firstMenuBox" class="menu-box">
 							<li>
@@ -81,7 +78,6 @@
 							</li>
 						</ul>
 					</div>	
-				</div>
 			</li>
 			<li id="coins" class="col-md-1 col-md-offset-1 col-lg-offset-2">
 				<div class="menu-size text-center pointer border-bottom">
@@ -89,51 +85,49 @@
 					<span class="text-uppercase menu-info-box">get&nbsp;coins</span>
 				</div>
 			</li>
-			<li id="alert" class="col-md-1 have-alert">
-				<div class="dropdown menu-size text-center pointer border-bottom">
-					<a href="#" data-toggle="dropdown" data-target="#">
-						<img src="images/alert.png" alt="alert">
-					</a>
+			<li id="alert" class="col-md-1 have-alert dropdown">
+				<div class="menu-size text-center pointer border-bottom" data-toggle="dropdown">
+					<img src="images/alert.png" alt="alert">
 					<span class="text-uppercase menu-info-box">3</span>
-					<div class="dropdown-menu menu-box">
-						<h6 class="text-center">Today</h6>
-						<ul>
-							<li>
-								<p >You have been invited to play in a match.
-								</p>
-								<img src="images/delete.png">
-							</li>
-							<li>
-								<p >You have been invited to play in a match.</p>
-								<img src="images/delete.png">
-							</li>
-							<li>
-								<p >You have been invited to play in a match.
-								</p>
-								<img src="images/delete.png">
-							</li>
-						</ul>
-					</div>
 				</div>
-			</li>
-			<li id="user" class="col-md-2">
-				<div class="dropdown menu-size text-center pointer border-bottom">
-					<a href="#" data-toggle="dropdown" data-target="#" class="user-avatar">
-						<img src="images/player.png" alt="user">
-					</a>
-					<ul class="dropdown-menu menu-box">
+				<div class="dropdown-menu menu-box">
+					<h6 class="text-center">Today</h6>
+					<ul>
 						<li>
-							<a href="#"><img src="images/user-menu.png" alt="clans">Profile</a>
+							<p >You have been invited to play in a match.
+							</p>
+							<img src="images/delete.png">
 						</li>
 						<li>
-							<a href="#"><img src="images/users-menu.png" alt="clans">Teams</a>
+							<p >You have been invited to play in a match.</p>
+							<img src="images/delete.png">
 						</li>
 						<li>
-							<a href="#"><img src="images/logout.png" alt="clans">Logout</a>
+							<p >You have been invited to play in a match.
+							</p>
+							<img src="images/delete.png">
 						</li>
 					</ul>
 				</div>
-				User 01
+			</li>
+			<li id="user" class="col-md-2 dropdown">
+				<div data-toggle="dropdown">
+					<div class="menu-size text-center pointer border-bottom user-avatar">
+						<img src="images/player.png" alt="user">
+					</div>
+					User 01
+				</div>
+				<ul class="dropdown-menu menu-box">
+					<li>
+						<a href="#"><img src="images/user-menu.png" alt="clans">Profile</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/users-menu.png" alt="clans">Teams</a>
+					</li>
+					<li>
+						<a href="#"><img src="images/logout.png" alt="clans">Logout</a>
+					</li>
+				</ul>
 			</li>
 			<li id="chat" class="col-md-2 col-md-offset-1 col-lg-1">
 				<div class="menu-size text-center pointer border-bottom">
@@ -256,7 +250,7 @@
 					</div>
 					<div class="col-xs-12">
 						<img src="images/password.png">
-						<input type="text" id="loginPassword" placeholder="password">
+						<input type="password" id="loginPassword" placeholder="password">
 						<button id="forgotPassword">forgot password?</button>
 					</div>
 					<input type="submit" name="submit-login" value="login" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
@@ -280,19 +274,19 @@
 					</div>
 					<div class="col-xs-12">
 						<img src="images/email.png">
-						<input type="text" id="registerEmail" placeholder="enter your email">
+						<input type="text" id="registerEmail" placeholder="email">
 					</div>
 					<div class="col-xs-12">
 						<img src="images/email.png">
-						<input type="text" id="registerReEmail" placeholder="repeat your email">
+						<input type="text" id="registerReEmail" placeholder="repeat email">
 					</div>
 					<div class="col-xs-12">
 						<img src="images/password.png">
-						<input type="text" id="registerPassword" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+						<input type="password" id="registerPassword" placeholder="password">
 					</div>
 					<div class="col-xs-12">
 						<img src="images/password.png">
-						<input type="text" id="registerRePassword" placeholder="&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;&bull;">
+						<input type="password" id="registerRePassword" placeholder="repeat password">
 					</div>
 					<p class="col-xs-12">Please enter your date of birth:<input type="text" id="registerDatepicker" placeholder="month / day / year" class="col-xs-12 col-sm-3 text-uppercase text-center"></p>
 					<div class="col-xs-12">
