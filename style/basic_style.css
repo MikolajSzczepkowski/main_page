@@ -555,10 +555,10 @@ li.friends-active{
 	color: #1182f5;
 }
 .chat-body img{
-	border: 2px solid #363636;
+	border: 3px solid #363636;
 }
 .chat-body .online-player img{
-	border: 2px solid #1182f5;
+	border: 3px solid #1182f5;
 }
 p.chat-panel-message{
 	margin: 0;
@@ -627,6 +627,119 @@ p.chat-panel-message{
 }
 .chat-info ul li:hover{
 	background: #d8d8d8;
+}
+.dropup .dropdown-menu.chat-settings{
+	min-width: 130px;
+	margin: 0 0 0 -30px;
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.chat-settings li{
+	height: 30px;
+	text-align: center;
+}
+.chat-settings li:hover, .chat-settings li:hover a{
+	background: #e43f3f;
+}
+.chat-settings li a{
+	padding: 3px 0;
+	font-weight: bold;
+}
+.dropup .dropdown-menu.team-dropup{
+	margin: 0 0 0 -2px;
+	padding: 0;
+	border-radius: 0;
+	box-shadow: none;
+}
+.team-dropup li, .team-dropup li a{
+	background: #000;
+	color: #fff;
+	font-weight: normal;
+	font-style: italic;
+	text-align: left;
+}
+.team-dropup li a{
+	padding: 3px 5px;
+}
+.team-dropup li a span{
+	margin-top: 3px;
+	float: right;
+}
+.team-dropup li:hover, .team-dropup li:hover a, .team-dropup li:hover a span{
+	background: #000;
+	color: #fff;
+}
+.team-dropup li a img{
+	padding: 0 5px;
+}
+.groupmates{
+	top: 100px;
+	background: #fff;
+	border-top: 5px solid #e43f3f;
+	border-bottom: 3px solid #e43f3f;
+	color: #333;
+}
+.groupmates h2{
+	padding-bottom: 10px;
+	border-bottom: 1px solid #d8d8d8;
+	font-size: 22px;
+	font-weight: bold; 
+}
+.groupmates ul{
+	max-height: 200px;
+	list-style: none;
+	margin: 0 0 0 -5px;
+	padding: 0 0 20px 0;
+	overflow-y: auto;
+}
+.groupmates ul li{
+	margin: 5px;
+	display: inline-block;
+}
+.groupmates ul li a img{
+	width: 35px; 
+	border: 3px solid #363636; 
+}
+.groupmates ul li a div{
+	width: 35px;
+	height: 35px;
+	margin-top: -35px;
+	position: relative;
+	background: rgba(250, 250, 250, 0.5);
+	opacity: 0;
+}
+.groupmates ul li a div span{
+	margin: 8px 0 0 8px;
+	color: rgba(54, 54, 54, 1);
+	font-size: 20px;
+}
+.groupmates ul li a:hover div, .groupmates ul li.chosen a div{
+	opacity: 1;
+}
+.groupmates ul::-webkit-scrollbar{
+	width: 7px;
+}
+.groupmates ul::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+	border-radius: 10px;
+}
+.groupmates ul::-webkit-scrollbar-thumb{
+	border-radius: 10px;
+	background: #363636;
+}
+.groupmates button{
+	margin: 20px auto;
+	padding: 1px 10px;
+    display: block;
+	background: #e43f3f;
+	border: none;
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+}
+.groupmates button:hover{
+	background: #363636;
 }
 .social{
 	height: 50px;

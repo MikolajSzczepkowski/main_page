@@ -278,6 +278,9 @@ $(function (){
 			$(this).addClass("active");
 		}
 	});
+	$(document).on("click", ".groupmates ul li", function(){
+		$(this).toggleClass("chosen");
+	});
 	
 	$("#coins").on("click", function(){
 		$("#paymentContainer").show();
@@ -320,5 +323,16 @@ $(function (){
 	$("#registerDatepicker").datepicker({
 		changeYear: true,
 		yearRange: "1945:2016"
+	});
+
+	$(document).on("click", ".create-group-list", function(){
+		$("#groupmatesContainer").show();
+	});
+	$(document).mouseup(function (e){
+		var container = $("#groupmatesInnerWrapper");
+
+		if (!container.is(e.target) && container.has(e.target).length === 0){
+			$("#groupmatesContainer").hide();
+		}
 	});
 });
