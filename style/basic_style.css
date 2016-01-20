@@ -1053,3 +1053,8 @@ li.social-list img{
 		position: fixed;
 	}
 }
+@-moz-document url-prefix() {
+	.team-dropup li a span{
+		margin-top: -17px;
+	}
+}
