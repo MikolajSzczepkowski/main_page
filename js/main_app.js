@@ -73,6 +73,10 @@ $(function (){
 
 		$(".background-cover").css("height", newHeight);
 	});
+	function countGroupmates(dataName){
+		groupmatesNumber = $("div[data-name='"+dataName+"']").find(".team-dropup li").length;
+		$("div[data-name='"+dataName+"']").find(".panel-title span").text("("+groupmatesNumber+"/50)");
+	};
 
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);
@@ -112,6 +116,7 @@ $(function (){
 							$("#chatContainer").prepend($(data).find(".chat-window"));
 							$("li[data-name='"+$firstListedFriend+"']").remove();
 							$("#chatInfo span").text($("#chatInfo ul li").length);
+							countGroupmates($firstListedFriend);
 						}
 					});
 				}
@@ -160,12 +165,11 @@ $(function (){
 		for (var i = 0; i < allTeams.length ; i++) {
 			if (allTeams[i].id === $selectedTeam) {
 				var	ul = "<ul class='row friends-list-buttons'></ul>",
-					profileButton = "<li><a data-name='"+allTeams[i].id+"' href='"+allTeams[i].address+"'><img src='images/user.png' alt='profile' class='friends-list-buttons'></a></li>",
-					likeButton = "<li><img src='images/like-team.png' alt='like' class='friends-list-buttons'></li>";
+					profileButton = "<li><a data-name='"+allTeams[i].id+"' href='"+allTeams[i].address+"'><img src='images/teams-chat.png' alt='profile' class='friends-list-buttons'></a></li>";
 				if (!$(this).parent().hasClass("friends-list-buttons")) {
 					$("#teamsList").find(".friends-list-buttons").remove();
 					$(this).after(ul);
-					$(this).next(".friends-list-buttons").append(profileButton, likeButton);
+					$(this).next(".friends-list-buttons").append(profileButton);
 				}
 			}
 		};
@@ -210,6 +214,7 @@ $(function (){
 					else{
 						$("#chatContainer").prepend($(data).find(".chat-window"));
 					}
+					countGroupmates($thisDataName);
 				}
 			});
 			$(this).parents(".friends-list-buttons").prev().addClass("clicked");
@@ -236,6 +241,7 @@ $(function (){
 						$("#chatContainer").prepend($(data).find(".chat-window"));
 						$("li[data-name='"+thisListedFriendDataName+"']").remove();
 						$("#chatInfo span").text($("#chatInfo ul li").length);
+						countGroupmates(thisListedFriendDataName);
 					}
 				});
 			}

@@ -416,8 +416,14 @@ body{
 	margin: 5px 0 10px 0;
 	background: #fff;
 }
+#teamsList.friends-list{
+	padding: 0;
+}
 #teamsList.friends-list li{
 	list-style: none;
+}
+#teamsList.friends-list li img{
+	width: 25px;
 }
 .friends-list li{
 	font-size: 12px;
@@ -503,11 +509,15 @@ li.friends-active{
 	font-style: italic;
 	line-height: 1.5;
 }
+.chat-top-bar a:hover h3 span{
+	color: #333;
+}
 .chat-top-bar h3 img{
 	margin-top: -2px;
 	margin-right: 5px;
 }
 .chat-top-bar span{
+	margin-left: 5px;
 	color: #363636;
 	cursor: pointer;
 }
@@ -647,10 +657,12 @@ p.chat-panel-message{
 	font-weight: bold;
 }
 .dropup .dropdown-menu.team-dropup{
+	max-height: 132px;
 	margin: 0 0 0 -2px;
 	padding: 0;
 	border-radius: 0;
 	box-shadow: none;
+	overflow-y: auto; 
 }
 .team-dropup li, .team-dropup li a{
 	background: #000;
