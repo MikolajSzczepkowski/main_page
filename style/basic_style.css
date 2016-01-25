@@ -389,7 +389,6 @@ body{
 	background: #1182f5;
 }
 .friends-search-img{
-	width: 30px;
 	height: 30px;
 	margin-top: 10px; 
 	background: #000;
@@ -401,6 +400,7 @@ body{
 	width: 30px;
 }
 #friendSearch{
+	width: 100%;
 	padding: 1px 5px;
 	font-style: italic;
 	font-weight: lighter;
@@ -827,7 +827,9 @@ li.social-list img{
 .main{
 	background: #fff;
 	margin-top: 15px;
+	margin-bottom: 50px;
 	border-top: 3px solid #e43f3f;
+	border-bottom: 3px solid #e43f3f;
 	border-left: 1px solid #d8d8d8;
 	border-right: 1px solid #d8d8d8;
 }
