@@ -369,6 +369,7 @@ body{
 .register-wrapper form p input{
 	width: 100%;
 	margin-top: 10px;
+	cursor: pointer;
 }
 .friends{
 	display: none;
@@ -419,7 +420,7 @@ body{
 #teamsList.friends-list{
 	padding: 0;
 }
-#teamsList.friends-list li{
+#teamsList.friends-list li, #groupList.friends-list li{
 	list-style: none;
 }
 #teamsList.friends-list li img{
@@ -433,7 +434,14 @@ body{
 	list-style-image: url(./../images/list-bullet-black.png);
 	cursor: pointer;
 }
-.friends-list li:hover{
+#groupList.friends-list li{
+	padding-left: 5px;
+}
+#groupList.friends-list li a{
+	color: #333;
+	text-decoration: none;
+}
+.friends-list li:hover, #groupList.friends-list li:hover a{
 	background: #d8d8d8;
 	color: #fff;
 }
@@ -657,19 +665,13 @@ p.chat-panel-message{
 	font-weight: bold;
 }
 .dropup .dropdown-menu.team-dropup{
+	min-width: 170px;
 	max-height: 132px;
 	margin: 0 0 0 -2px;
 	padding: 0;
 	border-radius: 0;
 	box-shadow: none;
 	overflow-y: auto; 
-}
-.team-dropup li, .team-dropup li a{
-	background: #000;
-	color: #fff;
-	font-weight: normal;
-	font-style: italic;
-	text-align: left;
 }
 .team-dropup li a{
 	padding: 3px 5px;

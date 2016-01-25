@@ -140,13 +140,13 @@
 		<div id="friends" class="col-xs-12 col-md-3 col-lg-2 friends">
 			<div class="col-xs-12 friends-search-wrapper text-center">
 				<ul class="col-xs-12">
-					<li id="userSearchButton" class="friends-search-img active">
+					<li id="userSearchButton" class="friends-search-img friends-search-button active">
 						<img src="images/user-white.gif" alt="user">
 					</li>
-					<li id="teamSearchButton" class="friends-search-img">
+					<li id="teamSearchButton" class="friends-search-img friends-search-button">
 						<img src="images/teams-white.png" alt="teams">
 					</li>
-					<li class="friends-search-img">
+					<li id="createGroupButton" class="friends-search-img">
 						<img src="images/chat-white.png" alt="chat">
 					</li>
 				</ul>
@@ -168,6 +168,12 @@
 					<li id="Mad Max"><img src="images/team.png" alt="avatar">Mad Max</li>
 					<li id="Noe"><img src="images/team.png" alt="avatar">Noe</li>
 					<li id="Darius"><img src="images/team.png" alt="avatar">Darius</li>
+				</ul>
+				<div class="col-xs-12 text-center friends-header">groups (3)</div>
+				<ul id="groupList" class="col-xs-12 friends-list text-left">
+					<li id="SuppaGruppa"><a href="group1.html">SuppaGruppa</a></li>
+					<li id="Group Galaxy"><a href="group2.html">Group Galaxy</a></li>
+					<li id="Group My"><a href="group3.html">Group My</a></li>
 				</ul>
 				<div class="col-xs-12 text-center friends-header">teams (6) <img src="images/liked-team.png"></div>
 				<ul id="teamsList" class="col-xs-12 friends-list text-left">
@@ -288,7 +294,7 @@
 						<img src="images/password.png">
 						<input type="password" id="registerRePassword" placeholder="repeat password">
 					</div>
-					<p class="col-xs-12">Please enter your date of birth:<input type="text" id="registerDatepicker" placeholder="month / day / year" class="col-xs-12 col-sm-3 text-uppercase text-center"></p>
+					<p class="col-xs-12">Please enter your date of birth:<input readonly type="text" id="registerDatepicker" placeholder="day / month / year" class="col-xs-12 col-sm-3 text-uppercase text-center"></p>
 					<div class="col-xs-12">
 						<input type="checkbox" id="acceptTerms">
 						<label for="acceptTerms" class="col-xs-12 col-sm-8 col-lg-7">I accept terms of use and Privacy Policy<span></span></label>

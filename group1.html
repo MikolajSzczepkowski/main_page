@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>chat window</title>
+	<title>group window</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" href="jquery-ui-1.11.4/jquery-ui.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,400italic,700italic,700,300italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
@@ -12,18 +12,37 @@
 </head>
 <body>
 <div id="chatContainer" class="chat-row">
-		<div class="chat-window" data-name="Darius">
+		<div class="chat-window" data-name="SuppaGruppa">
 			<div class="col-xs-12 chat-window-inner">
 				<div class="panel no-border">
 					<div class="panel-heading chat-top-bar">
-						<div class="col-md-8 col-xs-8">
-							<a href="#">
-								<h3 class="panel-title"><img src="images/list-bullet-blue.png"> Darius</h3>
-							</a>
+						<div class="col-md-8 col-xs-8 dropup">
+							<a href="#" data-toggle="dropdown">
+								<h3 class="panel-title">SuppaGruppa<span>(0/50)</span></h3>
+							</a>	
+							<ul class="dropdown-menu team-dropup">
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+								<li><a href="#"><img src="images/list-bullet-blue.png">Amazing player<span class="glyphicon glyphicon-remove icon-close"></span></a></li>
+							</ul>
 						</div>
-						<div class="col-md-4 col-xs-4" style="text-align: right;">
+						<div class="col-md-4 col-xs-4 dropup" style="text-align: right;">
+							<span class="glyphicon glyphicon-cog" data-toggle="dropdown"></span>
 							<span class="glyphicon glyphicon-minus icon-minim"></span>
 							<span class="glyphicon glyphicon-remove icon-close"></span>
+							<ul class="dropdown-menu chat-settings">
+								<li><a href="#">add groupmate</a></li>
+								<li><a href="#">leave group</a></li>
+							</ul>
 						</div>
 					</div>
 					<div class="col-xs-12 chat-body">
