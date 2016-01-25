@@ -405,12 +405,33 @@ body{
 	overflow-y: scroll;
 	background: #fff;
 }
+.friends-wrapper>div{
+	border: none;
+}
 .friends-header{
 	margin: 10px 0 0 0;
 	padding-bottom: 5px;
 	border-bottom: 1px solid #d8d8d8;
 	font-size: 12px;
 	font-style: italic;
+	cursor: pointer;
+}
+.friends-wrapper a{
+	text-decoration: none;
+	color: #333;
+}
+.friends-wrapper a h4:after {
+    font-family: 'Glyphicons Halflings';
+    font-size: 14px;  
+    content: "\e114"; 
+    float: right;        
+    color: grey;  
+}
+.friends-wrapper a.collapsed h4:after {
+    content: "\e080";   
+}
+.friends-header:hover{
+	color: #E43F3F;
 }
 .friends-list{
 	padding: 0;
