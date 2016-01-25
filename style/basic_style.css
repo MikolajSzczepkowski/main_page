@@ -1,6 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif;
 	background: url(./../images/background.png) repeat;
+	padding-right: 0!important;
 }
 .margin-left{
 	margin-left: 15px;
@@ -123,9 +124,12 @@ body{
 	top:0;
 	left:0;
 	position:absolute;
-	background:rgba(0, 0, 0, 0.5);
 	z-index: 1500;
 	display: none;
+}
+.modal-open{
+	overflow-y: auto;
+	padding-right: 0!important;
 }
 .coins-payment{
 	top: 100px;
@@ -309,6 +313,7 @@ body{
 }
 .covering-box form input[type="submit"]{
 	width: 33.33%;
+	margin-left: 15px;
 	padding: 0 15px;
 	font-weight: bold; 
 }
@@ -367,7 +372,7 @@ body{
 	font-weight: bold;
 }
 .register-wrapper form p input{
-	width: 100%;
+	padding-left: 50px;
 	margin-top: 10px;
 	cursor: pointer;
 }
@@ -732,26 +737,39 @@ p.chat-panel-message{
 	margin: 5px;
 	display: inline-block;
 }
-.groupmates ul li a img{
-	width: 35px; 
-	border: 3px solid #363636; 
-}
-.groupmates ul li a div{
-	width: 35px;
-	height: 35px;
-	margin-top: -35px;
+.groupmates .chosen-groupmate{
+	width: 120px;
+	height: 120px;
+	margin-top: -120px;
 	position: relative;
 	background: rgba(250, 250, 250, 0.5);
 	opacity: 0;
 }
-.groupmates ul li a div span{
-	margin: 8px 0 0 8px;
-	color: rgba(54, 54, 54, 1);
-	font-size: 20px;
+.groupmates .chosen-groupmate span{
+	margin: 40px 0 0 40px;
+	color: rgba(228, 63, 63, 1);
+	font-size: 40px;
+}
+.groupmates-box img{
+	width: 120px;
+    border: 3px solid #363636;
+}
+.groupmates-box p{
+	width: 120px;
+    margin-top: 3px;
+    padding: 2px 0;
+    background: #363636;
+    font-size: 12px;
+    font-style: italic;
+    color: #fff;
+}
+.groupmates-box:hover p, .groupmates ul li.chosen .groupmates-box p{
+	background: #E43F3F; 
 }
 .groupmates ul li a:hover div, .groupmates ul li.chosen a div{
 	opacity: 1;
 }
+
 .groupmates ul::-webkit-scrollbar{
 	width: 7px;
 }
@@ -763,7 +781,13 @@ p.chat-panel-message{
 	border-radius: 10px;
 	background: #363636;
 }
-.groupmates button{
+.groupmates input[type="text"]{
+	margin-top: 20px;
+	margin-bottom: 20px;
+    border: 1px solid #d8d8d8;
+    font-size: 22px;
+}
+.groupmates input[type="submit"]{
 	margin: 20px auto;
 	padding: 1px 10px;
     display: block;
@@ -773,7 +797,7 @@ p.chat-panel-message{
 	font-size: 22px;
 	font-weight: bold;
 }
-.groupmates button:hover{
+.groupmates input[type="submit"]:hover{
 	background: #363636;
 }
 .social{
@@ -855,9 +879,6 @@ li.social-list img{
 	.coins-list ul li:nth-of-type(4){
 		padding-left: 1%;
 	}
-	.covering-box form input[type="submit"]{
-		margin-left: 15px;
-	}
 	.covering-box form #forgotPassword{
 		margin-right: 2%;
 	}
@@ -890,14 +911,17 @@ li.social-list img{
 		position: relative;
 		left: 0;
 	}
-	.covering-box form #forgotPassword{
-	margin-right: 2%;
-}
+	.groupmates{
+		width: 650px;
+	}
+	.groupmates ul{
+	max-height: 300px;
+	}
 @media screen and (min-width: 990px){
 	.nav-wrapper{
 		position: fixed;
 		width: 100%;
-		z-index: 1111;
+		z-index: 500;
 	}
 	.menu-box{
 		left: 0;
@@ -1004,7 +1028,7 @@ li.social-list img{
 		width: 76%;
 	}
 	.covering-box form #forgotPassword{
-	margin-right: 0;
+	margin-right: 25px;
 	}
 }
 @media screen and (min-width: 1200px){

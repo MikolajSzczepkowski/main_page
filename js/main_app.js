@@ -2,7 +2,6 @@ $(function (){
 	var pageHeight = $(window).height(),
 		pageWidth = $(document).width(),
 		htmlHeight = $("html").height(),
-		initialCoverHeight = $(".background-cover").css("height"),
 		chatBoxCounter = 0,
 		allFriends = [
 			{id: "Depsperados_PL",
@@ -71,14 +70,7 @@ $(function (){
 	if ($("#alert").hasClass("have-alert")) {
 		$("#alert").find("div:first-child img").attr("src", "images/have-alert.png");
 	}
-	$(document).on("scroll", function(){
-		var windowScroll = $(window).scrollTop(),
-			convertCoverHeight = initialCoverHeight.replace(/[^0-9]/g, ''),
-			coverHeightNumber = parseInt(convertCoverHeight),
-			newHeight = coverHeightNumber + windowScroll;
-
-		$(".background-cover").css("height", newHeight);
-	});
+	
 	function countGroupmates(dataName){
 		groupmatesNumber = $("div[data-name='"+dataName+"']").find(".team-dropup li").length;
 		$("div[data-name='"+dataName+"']").find(".panel-title span").text("("+groupmatesNumber+"/50)");
@@ -343,58 +335,9 @@ $(function (){
 		$(this).toggleClass("chosen");
 	});
 	
-	$("#coins").on("click", function(){
-		$("#paymentContainer").show();
-	});
-	$(document).mouseup(function (e){
-		var container = $("#paymentInnerWrapper");
-
-		if (!container.is(e.target) && container.has(e.target).length === 0){
-			$("#paymentContainer").hide();
-		}
-	});
-
-	$("#loginRegister").on("click", function(){
-		$("#loginContainer").show();
-	});
-	$(document).mouseup(function (e){
-		var container = $("#loginInnerWrapper");
-
-		if (!container.is(e.target) && container.has(e.target).length === 0){
-			$("#loginContainer").hide();
-		}
-	});
-	$(document).mouseup(function (e){
-		var container = $("#registerInnerWrapper");
-
-		if (!container.is(e.target) && container.has(e.target).length === 0 && !$("#ui-datepicker-div").is(e.target) && $("#ui-datepicker-div").has(e.target).length === 0){
-			$("#registerContainer").hide();
-		}
-	});
-
-	$("#moveToRegister").on("click", function(){
-		$("#loginContainer").hide();
-		$("#registerContainer").show();
-	});
-	$("#moveToLogin").on("click", function(){
-		$("#registerContainer").hide();
-		$("#loginContainer").show();
-	});
-
 	$("#registerDatepicker").datepicker({
 		dateFormat: "dd-mm-yy",
 		changeYear: true,
 		yearRange: "1945:2016"
-	});
-
-	$(document).on("click", "#createGroupButton", function(){
-		$("#groupmatesContainer").show();
-	});
-	$(document).mouseup(function (e){
-		var container = $("#groupmatesInnerWrapper");
-
-		if (!container.is(e.target) && container.has(e.target).length === 0){
-			$("#groupmatesContainer").hide();
-		}
 	});
 });
