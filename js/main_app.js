@@ -340,4 +340,11 @@ $(function (){
 		changeYear: true,
 		yearRange: "1945:2016"
 	});
+
+	$(document).on("click", "#gamesSlider ul li", function(){
+		if (!$(this).hasClass("current-game")) {
+			$("#gamesSlider ul li").removeClass("current-game");
+			$(this).addClass("current-game");
+		}
+	});
 });

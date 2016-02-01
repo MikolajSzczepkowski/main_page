@@ -119,13 +119,82 @@
 				</div>
 				<ul class="dropdown-menu menu-box">
 					<li>
-						<a href="#"><img src="images/user-menu.png" alt="clans">Profile</a>
+						<a href="#"><img src="images/user-menu.png" alt="profile">Profile</a>
+					</li>
+					<li class="dropdown-submenu">
+						<a tabindex="-1" href="#"><img src="images/users-menu.png" alt="teams">Teams</a>
+						<ul class="dropdown-menu menu-box">
+							<li>
+								<a id="createNewTeamMenuButton" href="#" data-toggle="modal" data-target="#createTeamContainer"><div></div>Create a new team</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<div>
+										<img src="images/team.png" alt="clans">
+									</div>
+									Drużyna
+								</a>
+							</li>
+						</ul>
 					</li>
 					<li>
-						<a href="#"><img src="images/users-menu.png" alt="clans">Teams</a>
-					</li>
-					<li>
-						<a href="#"><img src="images/logout.png" alt="clans">Logout</a>
+						<a href="#"><img src="images/logout.png" alt="logout">Logout</a>
 					</li>
 				</ul>
 			</li>
@@ -782,6 +851,90 @@
 			</form>
 		</div>
 	</div>
+	<div id="createTeamContainer" class="background-cover modal fade" role="dialog">
+				<div id="createTeamInnerWrapper" class="row covering-box game-page create-team-wrapper modal-dialog">
+					<h2 class="col-xs-12 text-center text-uppercase">create a new team</h2>
+					<div class="col-xs-12">
+						<form name="create-team" id="createNewTeamForm" class="col-xs-12">
+							<div class="col-xs-12">
+								<img src="images/teams-white.png">
+								<input type="text" id="createNewTeamName" placeholder="Create a new team" class="form-click">
+							</div>
+							<div class="col-xs-12">
+								<div id="gamesSlider" class="games-slider">
+									<ul>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li class="current-game">
+											<a href="#">
+												<h5><span>Battlefield 4</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<h5><span>MK X</span></h5>
+												<div class="img-holder">
+													<img src="images/game-slide.png">
+												</div>
+											</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<input type="submit" name="create-team-accept" value="accept" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
+						</form>
+					</div>
+				</div>	
+			</div>
 </div>
 <div class="container-fluid login">
 	<div class="col-xs-12 col-md-2 col-md-offset-7">
@@ -926,5 +1079,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 <script src="./js/main_app.js"></script>
 <script src="./js/main_page_app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
