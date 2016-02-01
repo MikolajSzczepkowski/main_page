@@ -121,12 +121,10 @@ body{
 }
 .dropdown-submenu>.dropdown-menu {
 	max-height: 340px;
-	top: -3px;
+	top: 134px;
 	left: 0;
-	margin-left: -14px;
+	margin-left: 0;
 	overflow-y: auto;
-}
-.dropdown-submenu:hover>.dropdown-menu {
 	display: block;
 }
 .dropdown-submenu>.dropdown-menu li a{
@@ -1061,6 +1059,10 @@ li.social-list img{
 		top: 0;
 		left: -100%;
 		margin-left: -14px;
+		display: none;
+	}
+	.dropdown-submenu:hover>.dropdown-menu {
+		display: block;
 	}
 	#alert .menu-box{
 		width: 400px;
