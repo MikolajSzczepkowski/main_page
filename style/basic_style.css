@@ -161,6 +161,30 @@ body{
 	overflow-y: auto;
 	padding-right: 0!important;
 }
+.alert-box-wrapper{
+	width: 100%;
+	position: fixed;
+	z-index: 2000;
+	display: none;
+}
+.alert-box{
+	width: 300px;
+	margin: 0 auto;
+	padding: 10px;
+	position: relative;
+	background: #e43f3f;
+	border-radius: 50px;
+	color: #fff;
+}
+.alert-box img, .alert-box p{
+	display: inline-block;
+}
+.alert-box p{
+	width: 240px;
+	margin: 0;
+	padding: 0 10px;
+	float: right;
+}
 .coins-payment{
 	top: 100px;
 	background:rgba(0, 0, 0, 0.8);
@@ -234,6 +258,10 @@ body{
 	font-style: italic;
 	border-bottom: 1px solid #d8d8d8;
 }
+#alert .menu-box ul{
+	max-height: 172px;
+	overflow-y: auto; 
+}
 #alert .menu-box ul li{
 	margin: 0 0 5px 0;
 	padding: 15px 10px 10px 10px;
@@ -256,6 +284,7 @@ body{
 #alert .menu-box ul li img{
 	max-width: 100%;
 	margin: 0;
+	float: right;
 	display: inline-block;
 	vertical-align: top;
 	opacity: 0.5;
@@ -402,7 +431,6 @@ body{
 	font-weight: bold;
 }
 .register-wrapper form p input{
-	padding-left: 50px;
 	margin-top: 10px;
 	cursor: pointer;
 }
@@ -799,15 +827,20 @@ p.chat-panel-message{
 .groupmates ul li a:hover div, .groupmates ul li.chosen a div{
 	opacity: 1;
 }
-
-.groupmates ul::-webkit-scrollbar, .dropdown-submenu>.dropdown-menu::-webkit-scrollbar{
+.groupmates ul::-webkit-scrollbar,
+.dropdown-submenu>.dropdown-menu::-webkit-scrollbar,
+#alert .menu-box ul::-webkit-scrollbar{
 	width: 7px;
 }
-.groupmates ul::-webkit-scrollbar-track, .dropdown-submenu>.dropdown-menu::-webkit-scrollbar-track{
+.groupmates ul::-webkit-scrollbar-track,
+.dropdown-submenu>.dropdown-menu::-webkit-scrollbar-track,
+#alert .menu-box ul::-webkit-scrollbar-track{
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 	border-radius: 10px;
 }
-.groupmates ul::-webkit-scrollbar-thumb, .dropdown-submenu>.dropdown-menu::-webkit-scrollbar-thumb{
+.groupmates ul::-webkit-scrollbar-thumb,
+.dropdown-submenu>.dropdown-menu::-webkit-scrollbar-thumb,
+#alert .menu-box ul::-webkit-scrollbar-thumb{
 	border-radius: 10px;
 	background: #363636;
 }
@@ -853,6 +886,7 @@ p.chat-panel-message{
 }
 .covering-box form div.img-holder img{
 	width: 100%;
+	margin: 0;
 }
 .img-holder:after{
 	content:'';
@@ -891,12 +925,10 @@ p.chat-panel-message{
 .games-slider::-webkit-scrollbar {
 	height: 7px;
 }
- 
 .games-slider::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
 	border-radius: 10px;
 }
- 
 .games-slider::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	background: #363636;
@@ -1005,6 +1037,9 @@ li.social-list img{
 	.covering-box form input{
 		width: 90%;
 	}
+	.register-wrapper form p input{
+		width: 100%;
+	}
 @media screen and (min-width: 768px){
 	.footer nav ul li:nth-child(1){
 		margin: 0;
@@ -1027,6 +1062,9 @@ li.social-list img{
 		left: 25%;
 	}
 @media screen and (min-width: 990px){
+	.alert-box-wrapper{
+		top: 50px;
+	}
 	.nav-wrapper{
 		position: fixed;
 		width: 100%;
@@ -1075,7 +1113,7 @@ li.social-list img{
 		border-radius: 60px;
 	}
 	#alert .menu-box ul li p{
-		width: 298px;
+		width: 280px;
 		display: inline-block;
 		color: #fff;
 		font-style: italic;
