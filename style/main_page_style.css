@@ -3,7 +3,7 @@
 	padding: 0;
 }
 .carousel-indicators {
-    bottom: -10px;
+    top: 10px;
 }
 .banner{
 	margin: 0 0 20px 0;
@@ -251,6 +251,14 @@ div.newest-hover img{
 	.calendar .ui-datepicker{
 		margin-top: 0;
 		margin-left: 2px;
+	}
+	.carousel-indicators li{
+		width: 14px;
+		height: 14px;
+	}
+	.carousel-indicators .active{
+		width: 15px;
+		height: 15px;
 	}
 }
 @media screen and (min-width: 1200px){

@@ -29,7 +29,7 @@ body{
 }
 .user-avatar img{
 	width: 35px;
-	border: 2px solid #e43f3f;
+	border: 2px solid #1182f5;
 }
 .menu-background{
 	padding: 0;
@@ -37,6 +37,12 @@ body{
 	border-radius: 0;
 	border-bottom: 3px solid #E43F3F;
 	background: #d8d8d8;
+}
+#menuBackground.menu-background{
+	background: #F5F5F5;
+}
+#menuBackground.menu-box{
+	background: #EFEFEF;
 }
 .menu-box{
 	top: 55px;
@@ -116,10 +122,15 @@ body{
 	color: #fff;
 	font-size: 10px;
 }
+#chat .menu-info-box{
+	margin-left: 0;
+	background: #e43f3f; 
+}
 .dropdown-submenu {
 	position: relative;
 }
 .dropdown-submenu>.dropdown-menu {
+	width: 200px;
 	max-height: 340px;
 	top: 134px;
 	left: 0;
@@ -312,7 +323,8 @@ body{
 	line-height: 2;
 }
 .login-text:hover{
-	opacity: 0.5;
+	background: #1182f5;
+	color: #fff;
 }
 .covering-box{
 	top: 100px;
@@ -1129,7 +1141,7 @@ li.social-list img{
 		margin-left: 25px;
 	}
 	.dropdown-submenu>.dropdown-menu {
-		margin-left: -52px;
+		margin-left: -1px;
 	}
 	.login-wrapper, .register-wrapper{
 		top: 100px;
@@ -1216,9 +1228,6 @@ li.social-list img{
 	}
 	#user>ul {
 		margin-left: 0;
-	}
-	.dropdown-submenu>.dropdown-menu {
-		margin-left: -14px;
 	}
 	#coins, #alert{
 		width: 5%;
