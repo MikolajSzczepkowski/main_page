@@ -59,6 +59,12 @@ body{
 	margin-bottom: 3px;
 	background: #fff;
 }
+.menu-box>.teams-menu{
+	height: 0;
+}
+.menu-box>.teams-menu>a{
+	display: none;
+}
 .menu-box li:last-child{
 	margin-bottom: 0;
 }
@@ -132,7 +138,7 @@ body{
 .dropdown-submenu>.dropdown-menu {
 	width: 200px;
 	max-height: 340px;
-	top: 134px;
+	top: 67px;
 	left: 0;
 	margin-left: 0;
 	overflow-y: auto;
@@ -1118,6 +1124,12 @@ li.social-list img{
 		display: none;
 	}
 	.dropdown-submenu:hover>.dropdown-menu {
+		display: block;
+	}
+	.menu-box>.teams-menu{
+		height: inherit;
+	}
+	.menu-box>.teams-menu>a{
 		display: block;
 	}
 	#alert .menu-box{
