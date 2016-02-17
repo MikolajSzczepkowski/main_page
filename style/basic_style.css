@@ -773,7 +773,7 @@ p.chat-panel-message{
 	font-weight: bold;
 }
 .dropup .dropdown-menu.team-dropup{
-	min-width: 170px;
+	width: 200px;
 	max-height: 132px;
 	margin: 0 0 0 -2px;
 	padding: 0;
@@ -788,9 +788,18 @@ p.chat-panel-message{
 	margin-top: 3px;
 	float: right;
 }
+.team-dropup li a span.crown{
+	width: 16px;
+	height: 16px;
+	margin-top: -19px;
+	background: url(./../images/crown.png) no-repeat;
+}
 .team-dropup li:hover, .team-dropup li:hover a, .team-dropup li:hover a span{
 	background: #000;
 	color: #fff;
+}
+.team-dropup li:hover span.crown{
+	background: url(./../images/crown-hover.png) no-repeat;
 }
 .team-dropup li a img{
 	padding: 0 5px;
