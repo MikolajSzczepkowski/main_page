@@ -804,7 +804,6 @@ p.chat-panel-message{
 .team-dropup li a span.crown{
 	width: 16px;
 	height: 16px;
-	margin-top: -19px;
 	background: url(./../images/crown.png) no-repeat;
 }
 .team-dropup li:hover, .team-dropup li:hover a, .team-dropup li:hover a span{
@@ -1310,5 +1309,8 @@ li.social-list img{
 @-moz-document url-prefix() {
 	.team-dropup li a span{
 		margin-top: -17px;
+	}
+	.team-dropup li a span.crown{
+		margin-top: -19px;
 	}
 }
