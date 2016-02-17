@@ -653,11 +653,18 @@ li.friends-active{
 	overflow-y: scroll;
 	list-style: none;
 }
+.chat-body ul li{
+	padding: 0;
+}
 .chat-body ul li .chat-message-wrapper{
 	margin-bottom: 5px;
 }
 .chat-body ul li div{
 	padding: 0;
+}
+.chat-body ul li.chat-statement{
+	margin: 15px 0;
+
 }
 .chat-body h6{
 	font-family: 'Open Sans', sans-serif;
