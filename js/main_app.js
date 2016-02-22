@@ -50,7 +50,6 @@ $(function (){
 
 	if(pageWidth>=990){
 		$(".friends-wrapper").css("height", (pageHeight-154));
-		$(".main-inner-wrapper").css("padding-bottom", (pageHeight - htmlHeight));
 	}
 	else{
 		$(".friends-wrapper").css("height", "400px");
@@ -60,7 +59,6 @@ $(function (){
 		pageWidth = $(document).width();
 		if(pageWidth>=990){
 			$(".friends-wrapper").css("height", (pageHeight - 163));
-			$(".main-inner-wrapper").css("padding-bottom", (pageHeight - htmlHeight));
 		}
 		else{
 			$(".friends-wrapper").css("height", "400px");
@@ -95,6 +93,8 @@ $(function (){
 			$this.removeClass("glyphicon-plus").addClass("glyphicon-minus");
 		}
 	});
+
+	$("body").tooltip({ selector: '[rel=tooltip]' });
 
 	$(document).on("click", ".icon-close", function() {
 		var $this = $(this),

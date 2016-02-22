@@ -410,6 +410,11 @@ body{
 	background: #1182f5;
 	color: #fff;
 }
+.covering-box form #createTeamTooltip{
+	margin: 17px 0 0 -30px;
+    position: absolute;
+    color: #fff;
+}
 .covering-box form #forgotPassword{
 	margin-right: 3%;
 	float: right;
