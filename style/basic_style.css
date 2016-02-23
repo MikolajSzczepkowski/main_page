@@ -3,6 +3,23 @@ body{
 	background: url(./../images/background.png) repeat;
 	padding-right: 0!important;
 }
+.modal { 
+    position: fixed; 
+    top: 3%; 
+    right: 3%; 
+    left: 3%; 
+    width: auto; 
+    margin: 0; 
+}
+.modal-body { 
+    height: 60%; 
+}
+.modal-body { 
+    max-height: 350px; 
+    padding: 15px; 
+    overflow-y: auto; 
+    -webkit-overflow-scrolling: touch; 
+ }
 .margin-left{
 	margin-left: 15px;
 }
@@ -265,6 +282,31 @@ body{
 	background: none;
 	border: none;
 }
+#errorContainer{
+	z-index: 2000;
+}
+.error-wrapper{
+	background: #fff;
+	color: #333;
+}
+.error-wrapper>div{
+	padding: 0 0 0 15px;
+}
+.error-wrapper p{
+	margin-top: 45px;
+	margin-bottom: 0;
+	font-style: italic;
+}
+.error-wrapper button{
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background: #e43f3f;
+	color: #fff;
+	font-weight: bold;
+}
+.error-wrapper button:hover{
+	background: #363636;
+}
 .have-alert span{
 	background: #e43f3f;
 }
@@ -401,7 +443,6 @@ body{
 	float: right;
 }
 .covering-box form input[type="submit"]{
-	width: 33.33%;
 	margin-left: 15px;
 	padding: 0 15px;
 	font-weight: bold; 
@@ -1065,6 +1106,9 @@ li.social-list img{
 	}
 	.covering-box form #forgotPassword{
 		margin-right: 2%;
+	}
+	.covering-box form input[type="submit"]{
+		width: 33.33%; 
 	}
 @media screen and (min-width: 640px){
 	.social-list:nth-child(1){

@@ -211,7 +211,7 @@
 						</ul>
 					</li>
 					<li>
-						<a href="#"><img src="images/logout.png" alt="logout">Logout</a>
+						<a href="#" data-toggle="modal" data-target="#errorContainer"><img src="images/logout.png" alt="logout">Logout</a>
 					</li>
 				</ul>
 			</li>
@@ -1222,94 +1222,105 @@
 		</div>
 	</div>
 	<div id="createTeamContainer" class="background-cover modal fade" role="dialog">
-				<div id="createTeamInnerWrapper" class="row covering-box game-page create-team-wrapper modal-dialog">
-					<h2 class="col-xs-12 text-center text-uppercase">create a new team</h2>
+		<div id="createTeamInnerWrapper" class="row covering-box game-page create-team-wrapper modal-dialog">
+			<h2 class="col-xs-12 text-center text-uppercase">create a new team</h2>
+			<div class="col-xs-12">
+				<form name="create-team" id="createNewTeamForm" class="col-xs-12">
 					<div class="col-xs-12">
-						<form name="create-team" id="createNewTeamForm" class="col-xs-12">
-							<div class="col-xs-12">
-								<img src="images/teams-white.png">
-								<input type="text" id="createNewTeamName" placeholder="Create a new team" class="form-click">
-								<span id="createTeamTooltip" class="glyphicon glyphicon-question-sign" rel="tooltip" title="Check in"></span>
-							</div>
-							<div class="col-xs-12">
-								<div id="gamesSlider" class="games-slider">
-									<ul>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li class="current-game">
-											<a href="#">
-												<h5><span>Battlefield 4</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-										<li>
-											<a href="#">
-												<h5><span>MK X</span></h5>
-												<div class="img-holder">
-													<img src="images/game-slide.png">
-												</div>
-											</a>
-										</li>
-									</ul>
-								</div>
-							</div>
-							<div class="col-xs-12">
-								<input type="checkbox" id="acceptNewTeam">
-								<label for="acceptNewTeam" class="col-xs-12 col-sm-8 col-lg-7">I accept terms of use and Privacy Policy<span></span></label>
-							</div>
-							<input type="submit" name="create-team-accept" value="accept" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
-						</form>
+						<img src="images/teams-white.png">
+						<input type="text" id="createNewTeamName" placeholder="Create a new team" class="form-click">
+						<span id="createTeamTooltip" class="glyphicon glyphicon-question-sign" rel="tooltip" title="Check in"></span>
 					</div>
-				</div>	
+					<div class="col-xs-12">
+						<div id="gamesSlider" class="games-slider">
+							<ul>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li class="current-game">
+									<a href="#">
+										<h5><span>Battlefield 4</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+								<li>
+									<a href="#">
+										<h5><span>MK X</span></h5>
+										<div class="img-holder">
+											<img src="images/game-slide.png">
+										</div>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-xs-12">
+						<input type="checkbox" id="acceptNewTeam">
+						<label for="acceptNewTeam" class="col-xs-12 col-sm-8 col-lg-7">I accept terms of use and Privacy Policy<span></span></label>
+					</div>
+					<input type="submit" name="create-team-accept" value="accept" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
+				</form>
 			</div>
+		</div>	
+	</div>
+	<div id="errorContainer" class="background-cover modal fade" role="dialog">
+		<div id="errorInnerWrapper" class="row error-wrapper coins-payment modal-dialog">
+			<p class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 text-center">
+				Are you sure you want to quit?
+			</p>
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
+				<button class="col-xs-3 col-xs-offset-2 text-uppercase text-center">yes</button>
+				<button class="col-xs-3  col-xs-offset-1 text-uppercase text-center">no</button>
+			</div>
+		</div>
+	</div>
 </div>
 <div class="container-fluid login">
 	<div class="col-xs-12 col-md-2 col-md-offset-7">
@@ -1454,5 +1465,6 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 <script src="./js/main_app.js"></script>
 <script src="./js/main_page_app.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </body>
 </html>
