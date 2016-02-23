@@ -3,23 +3,6 @@ body{
 	background: url(./../images/background.png) repeat;
 	padding-right: 0!important;
 }
-.modal { 
-    position: fixed; 
-    top: 3%; 
-    right: 3%; 
-    left: 3%; 
-    width: auto; 
-    margin: 0; 
-}
-.modal-body { 
-    height: 60%; 
-}
-.modal-body { 
-    max-height: 350px; 
-    padding: 15px; 
-    overflow-y: auto; 
-    -webkit-overflow-scrolling: touch; 
- }
 .margin-left{
 	margin-left: 15px;
 }
@@ -1089,6 +1072,9 @@ li.social-list img{
 .footer ul li img{
 	width: 100%;
 	margin: -5px 0 0 0;
+}
+#errorContainer { 
+    position: fixed; 
 }
 @media screen and (min-width: 480px){
 	.menu-box{
