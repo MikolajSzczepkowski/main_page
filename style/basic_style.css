@@ -434,6 +434,9 @@ body{
 	background: #1182f5;
 	color: #fff;
 }
+#forgotPasswordContainer.covering-box form input[type="submit"]{
+	margin-bottom: 15px;
+}
 .covering-box form #createTeamTooltip{
 	margin: 17px 0 0 -30px;
     position: absolute;

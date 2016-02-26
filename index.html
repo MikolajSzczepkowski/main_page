@@ -362,7 +362,7 @@
 					<div class="col-xs-12">
 						<img src="images/password.png">
 						<input type="password" id="loginPassword" placeholder="password">
-						<button id="forgotPassword">forgot password?</button>
+						<button id="forgotPassword" data-dismiss="modal" data-toggle="modal" href="#forgotPasswordContainer">forgot password?</button>
 					</div>
 					<input type="submit" name="submit-login" value="login" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
 					<div class="col-xs-12">
@@ -371,6 +371,21 @@
 					</div>
 				</form>
 				<button id="moveToRegister" class="col-xs-12 col-sm-4 col-sm-offset-4 text-uppercase text-center change-form-button" data-dismiss="modal" data-toggle="modal" href="#registerContainer">register</button>
+			</div>
+		</div>
+	</div>
+	<div id="forgotPasswordContainer" class="background-cover covering-box modal fade" role="dialog">
+		<div id="forgotPasswordInnerWrapper" class="row login-wrapper modal-dialog">
+			<h2 class="col-xs-12 text-center text-uppercase">logo</h2>
+			<div class="col-xs-12">
+				<form name="forgot-password" id="forgotPasswordForm" class="col-xs-12">
+					<div class="col-xs-12">
+						<img src="images/email.png">
+						<input type="text" id="forgotPasswordEmail" placeholder="email">
+					</div>
+					<input type="submit" name="submit-forgot-password" value="send" class="col-xs-12 col-sm-4 col-lg-3 text-uppercase text-center">
+				</form>
+				<button id="moveToLogin" class="col-xs-12 col-sm-4 col-sm-offset-4 text-uppercase text-center change-form-button" data-dismiss="modal" data-toggle="modal" href="#loginContainer">return</button>
 			</div>
 		</div>
 	</div>
