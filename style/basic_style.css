@@ -39,10 +39,97 @@ body{
 	background: #d8d8d8;
 }
 #menuBackground.menu-background{
+	max-width: 100%;
 	background: #F5F5F5;
 }
 #menuBackground.menu-box{
 	background: #EFEFEF;
+}
+#menuPlaystationSlider{
+	margin-bottom: 30px;
+}
+.menu-scroll h3{
+	width: 164px;
+	height: 30px;
+	margin-bottom: 3px;
+	padding: 7px 0 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	vertical-align: middle;
+	color: #fff;
+}
+.menu-scroll ul{
+	margin: 0 0 10px 0;
+}
+.menu-scroll ul li div img{
+	margin: 0;
+}
+.menu-scroll ul li div span{
+	right: 0;
+	position: absolute;
+}
+#menuXboxSlider.menu-scroll h3{
+	background: #27912b;
+}
+#menuPlaystationSlider.menu-scroll h3{
+	background: #1182f5;
+}
+.tournament-container{
+	margin-bottom: 30px;
+}
+.tournament-container .tournament-title{
+	margin: 0 0 15px 0;
+}
+.tournament-container h2, .tournament-container span{
+	height: 30px;
+	padding: 7px 0 0 0;
+	display: inline-block;
+	background: #363636;
+	font-size: 14px;
+	font-weight: bold;
+	color: #fff;
+}
+.tournament-container h2{
+	width: 164px;
+	margin: 0 0 15px 0;
+}
+.tournament-container span{
+	width: 80px;
+	padding: 5px 0 0 0;
+}
+.tournament-container span.red-background{
+	background: #e43f3f;
+}
+.tournament-container span[data-name="play"]{
+	opacity: 0;
+}
+.xs-pull-right{
+	width: 100%;
+	float: left;
+}
+.tournament-container ul{
+	margin: 0;
+}
+.tournament-container ul li{
+	margin: 0 0 60px 0;
+}
+.tournament-container ul li a{
+	text-decoration: none;
+	color: #333;
+}
+.tournament-container ul li img{
+	margin: 0;
+}
+.tournament-container ul li p{
+	display: inline-block;
+	font-size: 12px;
+	font-style: italic;
+}
+.tournament-container ul li:hover p{
+	color: #e43f3f;
+}
+.tournament-container ul li div p{
+	margin: 0 15px 5px 0;
 }
 .menu-box{
 	top: 55px;
@@ -79,45 +166,6 @@ body{
 	top: 0;
 	margin: 0; 
 	display: inline-block;
-}
-.menu-background #firstMenuBox{
-	margin-bottom: 10px;
-	border-bottom: 3px solid #e43f3f;
-}
-.menu-background .menu-box li{
-	width: 350px;
-	height: 90px;
-}
-.menu-background .menu-box li:first-child{
-	height: 63px;
-	padding: 5px 0 0 0;
-	display: inline-block;
-	background: #fff;
-}
-.menu-background .menu-box li:first-child:hover{
-	background: #fff;
-	color: #333;
-}
-.menu-background .menu-box li:first-child h6{
-	width: 280px;
-	padding: 0 0 0 30px; 
-	display: inline-block;
-	font-size: 14px;
-}
-.menu-background .menu-box li:hover {
-	background: #e43f3f; 
-}
-.menu-background .menu-box li:hover a{
-	color: #fff;
-}
-.menu-background .menu-box li a{
-	padding: 0;
-	display: inline-block;
-	text-decoration: none;
-	color: #333;
-}
-.menu-background .menu-box li a img{
-	padding-right: 20px;
 }
 .menu-info-box{
 	margin: 10px 0 0 -15px;
@@ -269,6 +317,7 @@ body{
 	z-index: 2000;
 }
 .error-wrapper{
+	top: 35%;
 	background: #fff;
 	color: #333;
 }
@@ -340,6 +389,9 @@ body{
 .pointer{
 	cursor: pointer;
 }
+.login-wrapper, .register-wrapper{
+	top: 100px;
+}
 .login{
 	height: 200px;
 	background: #363636;
@@ -356,9 +408,6 @@ body{
 .login-text:hover{
 	background: #1182f5;
 	color: #fff;
-}
-.covering-box{
-	top: 100px;
 }
 .covering-box h2{
 	height: 50px;
@@ -939,6 +988,9 @@ p.chat-panel-message{
 .groupmates input[type="submit"]:hover{
 	background: #363636;
 }
+.create-team-wrapper{
+	top: 100px;
+}
 .create-team-wrapper form{
 	padding-bottom: 15px;
 }
@@ -979,10 +1031,16 @@ p.chat-panel-message{
 .games-slider ul li:hover .img-holder:after{
 	opacity: 0.5;
 }
-.current-game .img-holder:after{
+.menu-scroll.games-slider ul li:hover .img-holder:after{
+	opacity: 0.7;
+}
+.current-game .img-holder:after, #menuPlaystationSlider.menu-scroll.games-slider ul li:hover .img-holder:after{
 	background: #1182f5;
 }
-.games-slider ul li.current-game a h5{
+#menuXboxSlider.menu-scroll .current-game .img-holder:after, #menuXboxSlider.menu-scroll.games-slider ul li:hover .img-holder:after{
+	background: #27912b;
+}
+.games-slider ul li.current-game a h5, .menu-scroll.games-slider ul li:hover a h5{
 	color: #fff;
 } 
 .games-slider ul li a h5{
@@ -1083,10 +1141,6 @@ li.social-list img{
 	.menu-box{
 		left: 15%;
 	}
-	.menu-background .menu-box{
-		position: relative;
-		left: 10%;
-	}
 	.coins-list ul li{
 		width: 20%;
 	}
@@ -1109,10 +1163,6 @@ li.social-list img{
 	.social-list:nth-child(3){
 		margin-left: 50%;
 	}
-	.menu-background .menu-box{
-		position: relative;
-		left: 20%;
-	}
 	.covering-box form #forgotPassword{
 	margin-right: 4%;
 	}
@@ -1123,16 +1173,24 @@ li.social-list img{
 		width: 100%;
 	}
 @media screen and (min-width: 768px){
-	.footer nav ul li:nth-child(1){
+	.xs-pull-right{
+		width: auto;
+		float: right;
+	}
+	.sm-pull-right{
+		float: right;
+	}
+	.tournament-container h2{
 		margin: 0;
 	}
-	.menu-background #firstMenuBox{
-		margin-bottom: 0;
-		border-bottom: none;
+	.tournament-container ul li{
+		margin: 0 0 15px 0;
 	}
-	.menu-background .menu-box{
-		position: relative;
-		left: 0;
+	.tournament-container ul li div p{
+		margin: 0 15px;
+	}
+	.footer nav ul li:nth-child(1){
+		margin: 0;
 	}
 	.groupmates{
 		width: 650px;
@@ -1160,12 +1218,6 @@ li.social-list img{
 	}
 	#registerContainer{
 		position: absolute;
-	}
-	.menu-background .menu-box{
-		border-bottom: 0;
-	}
-	.menu-background #firstMenuBox{
-		margin-left: 27.7%;
 	}
 	.menu-background{	
 		width: 100%;
@@ -1212,9 +1264,6 @@ li.social-list img{
 	}
 	.dropdown-submenu>.dropdown-menu {
 		margin-left: -1px;
-	}
-	.login-wrapper, .register-wrapper{
-		top: 100px;
 	}
 	.login{
 		height: 255px;
@@ -1270,9 +1319,6 @@ li.social-list img{
 	li.social-list img{
 		margin: 8px 0 0 0;
 	}
-	.menu-background #firstMenuBox{
-		margin-left: 27.6%;
-	}
 	.covering-box form #forgotPassword{
 	margin-right: 25px;
 	}
@@ -1280,9 +1326,6 @@ li.social-list img{
 @media screen and (min-width: 1200px){
 	.chat-right-buffer{
 		right: 18%;
-	}
-	.menu-background #firstMenuBox{
-		margin-left: 27.25%;
 	}
 	#user{
 		padding-left: 0;
@@ -1313,29 +1356,6 @@ li.social-list img{
 @media screen and (min-width: 1280px){
 	.login-text{
 		margin: 135px 0 0 45px;
-	}
-	.menu-background #firstMenuBox{
-		margin-left: 27.1%;
-	}
-}
-@media screen and (min-width: 1360px){
-	.menu-background #firstMenuBox{
-		margin-left: 26.9%;
-	}
-}
-@media screen and (min-width: 1600px){
-	.menu-background #firstMenuBox{
-		margin-left: 26.6%;
-	}
-}
-@media screen and (min-width: 1680px){
-	.menu-background #firstMenuBox{
-		margin-left: 26.55%;
-	}
-}
-@media screen and (min-width: 1920px){
-	.menu-background #firstMenuBox{
-		margin-left: 26.35%;
 	}
 }
 @media screen and (min-height: 910px){

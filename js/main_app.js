@@ -3,6 +3,7 @@ $(function (){
 		pageWidth = $(document).width(),
 		htmlHeight = $("html").height(),
 		chatBoxCounter = 0,
+		menuChosenGame = false,
 		allFriends = [
 			{id: "Depsperados_PL",
 			address: "chat.html"},
@@ -345,6 +346,51 @@ $(function (){
 		if (!$(this).hasClass("current-game")) {
 			$("#gamesSlider ul li").removeClass("current-game");
 			$(this).addClass("current-game");
+		}
+	});
+	$(document).on("click", "#menuBackground ul li", function(){
+		if (!$(this).hasClass("current-game")) {
+			$("#menuBackground ul li").removeClass("current-game");
+			$(this).addClass("current-game");
+			$("#tournamentContainer").addClass("show");
+			menuChosenGame = true;
+		}
+	});
+
+	$("#gameButton").on("click", function(){
+		$(this).parent().toggleClass("open");
+	});
+	$("body").on("click", function(e){
+		if (!$("li.dropdown").is(e.target) 
+			&& $("li.dropdown").has(e.target).length === 0 
+			&& $(".open").has(e.target).length === 0
+		) {
+			$("li.dropdown").removeClass("open");
+		}
+	});
+
+	$("#tournamentContainer li").on("mouseenter", function(){
+		$(this).find("img[data-name='cup']").attr("src", "images/cup-red.png");
+		$(this).find("img[data-name='coins']").attr("src", "images/coins-menu-red.png");
+		$(this).find("span[data-name='play']").css("opacity", "1");
+	});
+	$("#tournamentContainer li").on("mouseleave", function(){
+		$(this).find("img[data-name='cup']").attr("src", "images/cup.png");
+		$(this).find("img[data-name='coins']").attr("src", "images/coins-menu.png");
+		$(this).find("span[data-name='play']").css("opacity", "0");
+	});
+
+
+	$("#menuBackground ul li").on("mouseenter", function(){
+		if (menuChosenGame === false) {
+			$("#tournamentContainer").removeClass("hidden");
+			$("#tournamentContainer").addClass("show");
+		}
+	});
+	$("#menuBackground ul li").on("mouseleave", function(){
+		if (menuChosenGame === false) {
+			$("#tournamentContainer").addClass("hidden");
+			$("#tournamentContainer").removeClass("show");
 		}
 	});
 });
