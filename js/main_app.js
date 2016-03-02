@@ -352,7 +352,7 @@ $(function (){
 		if (!$(this).hasClass("current-game")) {
 			$("#menuBackground ul li").removeClass("current-game");
 			$(this).addClass("current-game");
-			$("#tournamentContainer").addClass("show");
+			$("#tournamentContainer").addClass("visable");
 			menuChosenGame = true;
 		}
 	});
@@ -370,12 +370,12 @@ $(function (){
 	});
 
 	$("#tournamentContainer li").on("mouseenter", function(){
-		$(this).find("img[data-name='cup']").attr("src", "images/cup-red.png");
+		$(this).find("img[data-name='cup']").attr("src", "images/cup-menu-red.png");
 		$(this).find("img[data-name='coins']").attr("src", "images/coins-menu-red.png");
 		$(this).find("span[data-name='play']").css("opacity", "1");
 	});
 	$("#tournamentContainer li").on("mouseleave", function(){
-		$(this).find("img[data-name='cup']").attr("src", "images/cup.png");
+		$(this).find("img[data-name='cup']").attr("src", "images/cup-menu.png");
 		$(this).find("img[data-name='coins']").attr("src", "images/coins-menu.png");
 		$(this).find("span[data-name='play']").css("opacity", "0");
 	});
@@ -383,14 +383,18 @@ $(function (){
 
 	$("#menuBackground ul li").on("mouseenter", function(){
 		if (menuChosenGame === false) {
-			$("#tournamentContainer").removeClass("hidden");
-			$("#tournamentContainer").addClass("show");
+			$("#tournamentContainer").addClass("visable");
 		}
 	});
 	$("#menuBackground ul li").on("mouseleave", function(){
 		if (menuChosenGame === false) {
-			$("#tournamentContainer").addClass("hidden");
-			$("#tournamentContainer").removeClass("show");
+			$("#tournamentContainer").removeClass("visable");
+		}
+	});
+	$(document).on("click", "#tournamentPages a", function(){
+		if (!$(this).hasClass("active")) {
+			$("#tournamentPages a").removeClass("active");
+			$(this).addClass("active");
 		}
 	});
 });
