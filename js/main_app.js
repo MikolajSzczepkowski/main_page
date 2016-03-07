@@ -150,7 +150,7 @@ $(function (){
 				var	ul = "<ul class='row friends-list-buttons'></ul>",
 				messageButton = "<li id='chatOn'><a data-name='"+allFriends[i].id+"' href='"+allFriends[i].address+"'><img src='images/message.png' alt='massage' class='friends-list-buttons'></a></li>",
 				userButton = "<li><img src='images/user.png' alt='user' class='friends-list-buttons'></li>",
-				addUserButton = "<li><img src='images/add-user.png' alt='add user' class='friends-list-buttons'></li>";
+				addUserButton = "<li data-toggle='modal' data-target='#errorContainer'><img src='images/add-user.png' alt='add user' class='friends-list-buttons'></li>";
 				if ($(this).hasClass("collapsed")) {
 					$("#friendsList").find(".friends-list-buttons").remove();
 					$(this).removeClass("collapsed");
@@ -381,12 +381,12 @@ $(function (){
 	});
 
 
-	$("#menuBackground ul li").on("mouseenter", function(){
+	$(".menu-scroll ul li").on("mouseenter", function(){
 		if (menuChosenGame === false) {
 			$("#tournamentContainer").addClass("visable");
 		}
 	});
-	$("#menuBackground ul li").on("mouseleave", function(){
+	$(".menu-scroll ul li").on("mouseleave", function(){
 		if (menuChosenGame === false) {
 			$("#tournamentContainer").removeClass("visable");
 		}

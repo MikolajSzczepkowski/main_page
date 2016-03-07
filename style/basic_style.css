@@ -76,10 +76,10 @@ body{
 }
 .tournament-container{
 	margin-bottom: 30px;
-	opacity: 0;
+	visibility: hidden;
 }
 .tournament-container.visable{
-	opacity: 1;
+	visibility: visible;
 }
 .tournament-container .tournament-title{
 	margin: 0 0 15px 0;
@@ -373,6 +373,7 @@ body{
 	padding: 0 10px 20px 10px;
 	background: #fff;
 	overflow-y: auto;
+	overflow-x: hidden;
 }
 #alert .menu-box h6{
 	padding: 0 0 5px 0;
@@ -409,6 +410,16 @@ body{
 	display: inline-block;
 	vertical-align: top;
 	opacity: 0.5;
+}
+#alert .menu-box ul li div button{
+	background: #fff;
+	border: none;
+	outline: none;
+	font-weight: bold;
+}
+#alert .menu-box ul li div button:hover{
+	background: #e43f3f;
+	color: #fff;
 }
 .pointer{
 	cursor: pointer;
