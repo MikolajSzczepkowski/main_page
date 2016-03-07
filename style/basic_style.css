@@ -382,6 +382,7 @@ body{
 }
 #alert .menu-box ul{
 	max-height: 172px;
+	margin: 0;
 	overflow-y: auto; 
 }
 #alert .menu-box ul li{
