@@ -112,7 +112,7 @@ body{
 	float: left;
 }
 .tournament-container ul{
-	margin: 0;
+	margin: 0 0 10px 0;
 }
 .tournament-container ul li{
 	height: 30px;
@@ -144,7 +144,7 @@ body{
 .tournament-pages span{
 	width: 25px;
 	height: 25px;
-	margin: 0 10px 0 0;
+	margin: 0 10px 10px 0;
 	padding: 3px 0 0 0;
 	background: #363636;
 }
@@ -406,10 +406,11 @@ body{
 }
 #alert .menu-box ul li img{
 	max-width: 100%;
+	top: 50%;
+    right: 10px;
 	margin: 0;
-	float: right;
-	display: inline-block;
-	vertical-align: top;
+	position: absolute;    
+    transform: translateY(-50%);
 	opacity: 0.5;
 }
 #alert .menu-box ul li div button{
@@ -1346,6 +1347,9 @@ li.social-list img{
 	}
 	.covering-box form #forgotPassword{
 		margin-right: 15%;
+	}
+	.tournament-pages span{
+		margin: 0 10px 0 0;
 	}
 }
 @media screen and (min-width: 1024px){
