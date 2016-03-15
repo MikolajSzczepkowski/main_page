@@ -10,7 +10,7 @@ $(function (){
 		type: "get",
 		success: function(data){
 			$(data.events).each(function(index, value){
-				value.date.push(selectedDates);
+				selectedDates.push(value.date);
 			});
 			return selectedDates
 		}
