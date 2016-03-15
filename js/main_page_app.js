@@ -4,19 +4,17 @@ $(function (){
 		crsl = $('#myCarousel'),
 		selectedDates = [];
 
-	$.ajax({
-		url: "data/events.json",
-		dataType: "json",
-		type: "get",
-		success: function(data){
-			$(data.events).each(function(index, value){
-				selectedDates.push(value.date);
-			});
-			console.log(selectedDates);
-		}
-	});
-
 	function setActiveDays(date) {
+		$.ajax({
+			url: "data/events.json",
+			dataType: "json",
+			type: "get",
+			success: function(data){
+				$(data.events).each(function(index, value){
+					selectedDates.push(value.date);
+				});
+			}
+		});
 	    dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
 	    if ($.inArray(dmy, selectedDates) == -1) {
 	        return [false, ""];
