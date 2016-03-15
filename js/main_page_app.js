@@ -18,19 +18,23 @@ $(function (){
 				firstDay: 1,
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
-		            console.log(date);
-		        }
+					$(data.events).each(function(index, value){
+						if (data == value.date) {
+							$("#eventContainer img").attr("src", value.image);
+						}
+					});
+				}
 			});
 		}
 	});
 
 	function setActiveDays(date) {
-	    dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
-	    if ($.inArray(dmy, selectedDates) == -1) {
-	        return [false, ""];
-	    } else {
-	        return [true, "", "Event"];
-	    }
+		dmy = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+		if ($.inArray(dmy, selectedDates) == -1) {
+			return [false, ""];
+		} else {
+			return [true, "", "Event"];
+		}
 	}
 
 	function progressBarCarousel() {
