@@ -1,0 +1,24 @@
+{
+	"events": [
+		{
+			"name": "Battlefield",
+			"date": "9-3-2016",
+			"image": "images/rainbow-six.png"
+		},
+		{
+			"name": "Mario",
+			"date": "14-3-2016",
+			"image": "images/mario.jpg"
+		},
+		{
+			"name": "Pacman",
+			"date": "15-3-2016",
+			"image": "images/pacman.jpg"
+		},
+		{
+			"name": "Contra",
+			"date": "24-3-2016",
+			"image": "images/contra.jpg"
+		}
+	]
+}

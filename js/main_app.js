@@ -150,7 +150,7 @@ $(function (){
 				var	ul = "<ul class='row friends-list-buttons'></ul>",
 				messageButton = "<li id='chatOn'><a data-name='"+allFriends[i].id+"' href='"+allFriends[i].address+"'><img src='images/message.png' alt='massage' class='friends-list-buttons'></a></li>",
 				userButton = "<li><img src='images/user.png' alt='user' class='friends-list-buttons'></li>",
-				addUserButton = "<li data-toggle='modal' data-target='#errorContainer'><img src='images/add-user.png' alt='add user' class='friends-list-buttons'></li>";
+				removeUserButton = "<li data-toggle='modal' data-target='#errorContainer'><img src='images/user-minus.png' alt='remove user' class='friends-list-buttons'></li>";
 				if ($(this).hasClass("collapsed")) {
 					$("#friendsList").find(".friends-list-buttons").remove();
 					$(this).removeClass("collapsed");
@@ -158,7 +158,7 @@ $(function (){
 				else{
 					$("#friendsList").find(".friends-list-buttons").remove();
 					$(this).after(ul);
-					$(this).next(".friends-list-buttons").append(messageButton, userButton, addUserButton);
+					$(this).next(".friends-list-buttons").append(messageButton, userButton, removeUserButton);
 					$(this).addClass("collapsed");
 				}
 			}
@@ -395,6 +395,20 @@ $(function (){
 		if (!$(this).hasClass("active")) {
 			$("#tournamentPages a").removeClass("active");
 			$(this).addClass("active");
+		}
+	});
+
+	$(document).on("submit", "#createNewTeamForm", function(e){
+		e.preventDefault();
+		if ($("#acceptNewTeam").prop("checked") == false) {
+			$("#alertBox p").text("You have to accept terms.");
+			$("#alertBox").show();
+			$("#alertBox").delay(3000).hide(0);
+		}
+		if ($("#createNewTeamName").val().length == 0) {
+			$("#alertBox p").text("You have to write team name.");
+			$("#alertBox").show();
+			$("#alertBox").delay(3000).hide(0);
 		}
 	});
 });

@@ -2,7 +2,19 @@ $(function (){
 	var percent = 0,
 		bar = $('.transition-timer-carousel-progress-bar'),
 		crsl = $('#myCarousel'),
-		selectedDates = ["9-12-2015", "14-12-2015", "15-12-2015", "24-12-2015"];
+		selectedDates = [];
+
+	$.ajax({
+		url: "data/events.json",
+		dataType: "json",
+		type: "get",
+		success: function(data){
+			$(data.events).each(function(index, value){
+				value.date.push(selectedDates);
+			});
+			return selectedDates
+		}
+	});
 
 	function setActiveDays(date) {
 	    dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
