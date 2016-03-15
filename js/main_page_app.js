@@ -19,10 +19,10 @@ $(function (){
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
 					dmy = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-					console.log(date);
+					console.log(date, dmy);
 					$(data.events).each(function(index, value){
 						console.log(value.date);
-						if (date == value.date) {
+						if (dmy == value.date) {
 							$("#eventContainer img").attr("src", value.image);
 						}
 					});
