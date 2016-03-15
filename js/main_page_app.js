@@ -12,7 +12,7 @@ $(function (){
 			$(data.events).each(function(index, value){
 				selectedDates.push(value.date);
 			});
-			return selectedDates
+			console.log(selectedDates);
 		}
 	});
 
