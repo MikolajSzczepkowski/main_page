@@ -19,7 +19,7 @@ $(function (){
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
 					$(data.events).each(function(index, value){
-						if (data == value.date) {
+						if (date == value.date) {
 							$("#eventContainer img").attr("src", value.image);
 						}
 					});
