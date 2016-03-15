@@ -18,6 +18,7 @@ $(function (){
 				firstDay: 1,
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
+					dmy = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
 					console.log(date);
 					$(data.events).each(function(index, value){
 						console.log(value.date);
