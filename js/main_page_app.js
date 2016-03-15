@@ -4,17 +4,24 @@ $(function (){
 		crsl = $('#myCarousel'),
 		selectedDates = [];
 
+	$.ajax({
+		url: "data/events.json",
+		dataType: "json",
+		type: "get",
+		success: function(data){
+			$(data.events).each(function(index, value){
+				selectedDates.push(value.date);
+			});
+
+			$( "#calendar" ).datepicker({showOtherMonths: true,
+				selectOtherMonths: true,
+				firstDay: 1,
+				beforeShowDay: setActiveDays
+			});
+		}
+	});
+
 	function setActiveDays(date) {
-		$.ajax({
-			url: "data/events.json",
-			dataType: "json",
-			type: "get",
-			success: function(data){
-				$(data.events).each(function(index, value){
-					selectedDates.push(value.date);
-				});
-			}
-		});
 	    dmy = date.getDate() + "-" + (date.getMonth() + 1) + "-" + date.getFullYear();
 	    if ($.inArray(dmy, selectedDates) == -1) {
 	        return [false, ""];
@@ -23,11 +30,6 @@ $(function (){
 	    }
 	}
 
-	$( "#calendar" ).datepicker({showOtherMonths: true,
-					selectOtherMonths: true,
-					firstDay: 1,
-					beforeShowDay: setActiveDays
-	});
 	
 	function progressBarCarousel() {
 		bar.css({width:percent+'%'});
