@@ -16,10 +16,10 @@ $(function (){
 			$( "#calendar" ).datepicker({showOtherMonths: true,
 				selectOtherMonths: true,
 				firstDay: 1,
+				dateFormat: "dd/mm/yy",
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
-					dmy = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
-					console.log(date, dmy);
+					console.log(date);
 					$(data.events).each(function(index, value){
 						console.log(value.date);
 						if (dmy == value.date) {
