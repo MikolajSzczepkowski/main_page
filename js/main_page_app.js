@@ -16,7 +16,10 @@ $(function (){
 			$( "#calendar" ).datepicker({showOtherMonths: true,
 				selectOtherMonths: true,
 				firstDay: 1,
-				beforeShowDay: setActiveDays
+				beforeShowDay: setActiveDays,
+				onSelect: function (date) {
+		            console.log(date);
+		        }
 			});
 		}
 	});
@@ -30,7 +33,6 @@ $(function (){
 	    }
 	}
 
-	
 	function progressBarCarousel() {
 		bar.css({width:percent+'%'});
 		percent = percent +0.5;
