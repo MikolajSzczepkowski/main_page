@@ -18,7 +18,9 @@ $(function (){
 				firstDay: 1,
 				beforeShowDay: setActiveDays,
 				onSelect: function (date) {
+					console.log(date);
 					$(data.events).each(function(index, value){
+						console.log(value.date);
 						if (date == value.date) {
 							$("#eventContainer img").attr("src", value.image);
 						}
