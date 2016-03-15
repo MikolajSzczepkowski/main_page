@@ -22,7 +22,7 @@ $(function (){
 					console.log(date);
 					$(data.events).each(function(index, value){
 						console.log(value.date);
-						if (dmy == value.date) {
+						if (date == value.date) {
 							$("#eventContainer img").attr("src", value.image);
 						}
 					});
