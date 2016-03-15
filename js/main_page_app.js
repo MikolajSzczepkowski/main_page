@@ -32,7 +32,7 @@ $(function (){
 	});
 
 	function setActiveDays(date) {
-		dmy = date.getDate() + "/" + (date.getMonth() + 1) + "/" + date.getFullYear();
+		dmy = ("0" + date.getDate()).slice(-2) + "/" + ("0" + (date.getMonth() + 1)).slice(-2) + "/" + date.getFullYear();
 		if ($.inArray(dmy, selectedDates) == -1) {
 			return [false, ""];
 		} else {
