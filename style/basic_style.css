@@ -599,7 +599,7 @@ button, input, textarea{
 	border: none;
 	font-weight: bold;
 }
-.register-wrapper form{
+.register-wrapper form, #forgotPasswordInnerWrapper form{
 	padding-bottom: 20px;
 }
 .register-wrapper form>div{
@@ -1301,7 +1301,7 @@ li.social-list img{
 		top: 54px;	 
 	}
 	.alert-box-wrapper{
-		top: 50px;
+		top: 45px;
 	}
 	.nav-wrapper{
 		position: fixed;
