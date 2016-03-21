@@ -75,6 +75,23 @@ $(function (){
 		$("div[data-name='"+dataName+"']").find(".panel-title span").text("("+groupmatesNumber+"/50)");
 	};
 
+	function getChatVariables(address){
+		var id = "some data",
+		yourId = "some data",
+		codeId = "some data";
+
+		$.ajax({
+			url: address,
+			data: {id: id,
+				yourId: yourId,
+				codeId: codeId},
+			success: function(){
+
+			}
+
+		});
+	}
+
 	$(document).on("click", ".panel-heading span.icon-minim", function() {
 		var $this = $(this);
 		if (!$this.hasClass("panel-collapsed")) {
@@ -359,6 +376,14 @@ $(function (){
 
 	$("#gameButton").on("click", function(){
 		$(this).parent().toggleClass("open");
+	});
+	$("li.dropdown").on("click", function(e){
+		if (!$("#playContainer").is(e.target)
+			&& $("#playContainer").has(e.target).length === 0
+			&& $("#playContainer").hasClass("open")
+		) {
+			$("#playContainer").removeClass("open");
+		}
 	});
 	$("body").on("click", function(e){
 		if (!$("li.dropdown").is(e.target) 
