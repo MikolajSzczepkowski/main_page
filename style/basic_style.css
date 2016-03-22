@@ -1071,7 +1071,7 @@ p.chat-panel-message{
 	top: 100px;
 }
 .create-team-wrapper form{
-	padding: 15px;
+	padding-bottom: 15px;
 }
 .games-slider{
 	overflow-x: scroll;
