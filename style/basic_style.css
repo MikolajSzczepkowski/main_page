@@ -9,8 +9,11 @@ body{
 	background-color: #2a2c38;
 	padding-right: 0!important;
 }
-button, input, textarea{
+button{
 	border: none;
+	outline: none;
+}
+input, textarea{
 	outline: none;
 }
 .margin-left{
@@ -564,7 +567,7 @@ button, input, textarea{
 #forgotPasswordContainer.covering-box form input[type="submit"]{
 	margin-bottom: 15px;
 }
-.covering-box form #createTeamTooltip{
+.covering-box form #createTeamTooltip, .covering-box form #createTeamGamesTooltip{
 	margin: 17px 0 0 -30px;
 	position: absolute;
 	color: #fff;
@@ -1068,7 +1071,7 @@ p.chat-panel-message{
 	top: 100px;
 }
 .create-team-wrapper form{
-	padding-bottom: 15px;
+	padding: 15px;
 }
 .games-slider{
 	overflow-x: scroll;
