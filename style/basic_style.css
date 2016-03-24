@@ -817,7 +817,7 @@ li.friends-active{
 	border-top: 1px solid #d8d8d8;
 }
 .chat-body ul{
-	height: 200px;
+	height: 220px;
 	overflow-y: scroll;
 	list-style: none;
 }
